@@ -1,0 +1,186 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Asterisk wild card selector to override default styles taken form Love Running project*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* generic project styles */
+  color: #FFD700;
+  font-family: "Playfair Display", sans-serif;
+}
+
+/* H1 style */
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4caf50;
+}
+
+.hidden-heading {
+  display: none;
+}
+
+/* Header */
+header {
+  background-color: #8b4513;
+  padding: 0 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* format the header */
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu {
+  list-style: none;
+  letter-spacing: 4px;
+  font-size: 110%;
+
+}
+
+#menu>li {
+  margin-bottom: 1em;
+
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* navbar styles with drop down toggle */
+nav {
+  position: absolute;
+  background-color: #8b4513;
+  padding: 0 1rem;
+  z-index: 99;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
+  /* alighn drop down menue to the right 
+  org: left: 0; width: 100% */
+  width: fit-content;
+  right: 0;
+  text-align: right;
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+}
+
+/* Main */
+main {
+  /* make main element take up any surplus space  to push footer to bottom */
+  flex: 1 0 auto;
+  /* add margin to the top to prevent content from beeing covered by header */
+  margin-top: 47px;
+  /* enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section for vision */
+#vision {
+  height: 50vh;
+  width: 100%;
+  background: url("../images/2022-08-19_2908315334072447120.webp") no-repeat center center/cover;
+  position: relative;
+}
+
+#vision-text > h2, vision-text > h3 {
+  color: white;
+}
+
+#vision-text {
+  /* final rgba sets opacity to semi-transparent */
+  background-color: #f5f5dc;
+  color: #8b4513;
+  opacity: 0.8;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  bottom: 30px;
+  width: 75%;
+  min-height: 150px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+/* Social Networks icons */
+#social-networks {
+  display: none;
+}
+
+#social-networks-dropdown {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+#social-networks-dropdown i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
+}
+
+/* Media query: tablets and larger (768px and up */
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+      display: block;
+      position: relative;
+      box-shadow: none;
+      width: fit-content;
+      padding-right: 1rem;
+  }
+  /* on bigger screens the social networks should be displayed on the bottom */
+  #social-networks-dropdown {
+      display: none;
+  }
+  
+  #menu {
+      display: flex;
+  }
+
+  #menu > li {
+      padding-left: 1rem
+  }
+
+  .nav-toggle-label {
+      display: none;
+  }
+
+  #logo {
+      font-size: 150%;
+      line-height: 75px;
+      margin: 0 0.5rem;   
+  }
