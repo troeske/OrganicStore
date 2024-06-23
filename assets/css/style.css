@@ -186,7 +186,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border-color: #221133;
+  border: 1px solid black;
   scroll-snap-align: center;
 }
 
