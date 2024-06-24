@@ -218,6 +218,7 @@ main {
 }
 .slide-image {
   width: 90%;
+  height: 60%; 
   object-fit: cover;
   justify-content: center;
   align-items: center;
@@ -311,17 +312,19 @@ main {
 }
 
 #footer-div {
-  position: relative;
+  position: absolute;
   width: 100%;
   left: 0;
+  bottom: 0;
   padding: 5px;
-  background-color: black;
+  background-color: #8b4513;
 }
 
 #footer-div p {
   color: white;
   margin: 0;
   font-size: 70%;
+  font-family: "Montserrat", sans-serif;
 } 
 
 
