@@ -1,5 +1,28 @@
 /* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+  font-family: 'NouveauYearsObliqueJNL';
+  src: url('../fonts/NouveauYearsObliqueJNL.eot');
+  src: local('../fonts/NouveauYearsObliqueJNL'),
+      url('../fonts/NouveauYearsObliqueJNL.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NouveauYearsObliqueJNL.woff2') format('woff2'),
+      url('../fonts/NouveauYearsObliqueJNL.woff') format('woff'),
+      url('../fonts/NouveauYearsObliqueJNL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NouveauYearsJNL';
+  src: url('../fonts/NouveauYearsJNL.eot');
+  src: local('../fonts/NouveauYearsJNL'),
+      url('../fonts/NouveauYearsJNL.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NouveauYearsJNL.woff2') format('woff2'),
+      url('../fonts/NouveauYearsJNL.woff') format('woff'),
+      url('../fonts/NouveauYearsJNL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Asterisk wild card selector to override default styles taken form Love Running project*/
 * {
@@ -16,7 +39,7 @@ body {
   /* generic project styles */
   color: #FFD700;
   font-family: "Playfair Display", sans-serif;
-  margin: 10px;
+  margin: 0px;
   position: relative;
 }
 
@@ -34,10 +57,14 @@ h3 {
   display: none;
 }
 
+#logo {
+  font-family: NouveauYearsJNL, serif;
+}
+
 /* Header */
 header {
   background-color: #8b4513;
-  padding: 0 1rem;
+  padding: 0 1.5rem 0 0.5rem;
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -115,21 +142,17 @@ main {
   padding-bottom: 64px;
 }
 
-
 /* Hero Section for vision */
 #vision {
   height: 50vh;
   width: 100%;
-  background: url("../images/2022-08-19_2908315334072447120.webp") no-repeat center center/cover;
+  background: url("../images/2021-03-26_2537931490870063176.jpg") no-repeat center center/cover;
+  /* ../images/2021-02-01_2499584393406262303.jpg or ../images/2021-04-05_2545205393057299317.jpg*/
   position: relative;
-}
-
-#vision-text > h2, vision-text > h3 {
-  color: white;
+  padding-bottom: 0;
 }
 
 #vision-text {
-  /* final rgba sets opacity to semi-transparent */
   background-color: #f5f5dc;
   color: #8b4513;
   opacity: 0.8;
@@ -138,21 +161,18 @@ main {
   font-weight: bold;
   position: absolute;
   bottom: 30px;
-  width: 75%;
+  width: 70%;
   min-height: 100px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  border-radius: 0%;
+  padding: 10px;
+  border-radius: 5%;
   margin-left: 1%;
 }
 
 /* special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
-
 .carousel-container {
   width: 100%;
   padding-block: 16px 32px;
-  margin: 16px 32px;
+  margin: 0px 32px;
   overflow-x: auto;
   display: flex;
   gap: 12px;
@@ -177,7 +197,6 @@ main {
 .carousel-container::-webkit-scrollbar-track-piece:start {
   background: #29AB87;
 }
-
 
 .carousel-slide {
   flex: 1 0 30%;
@@ -217,12 +236,12 @@ main {
   text-align: center;
  }
 
- #slide1-view-more{
+ .slide-view-more{
   width: 90%;
   height: 32px;
   background-color: #8b4513;
   color: white;
-
+  text-transform: uppercase;
  }
 
 
