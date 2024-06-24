@@ -244,47 +244,22 @@ main {
   text-transform: uppercase;
  }
 
-footer {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  padding: 16px;
-  background-color: #eaeaea90;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
-footer p {
-  color: #221133;
-  margin: 0;
-}
-
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
 /* special offers carousel end------------------------------------- */
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2px;
-  height: 300px;
-  /* align-items: center; */
-
+  width: 300px;
 }
 
 .product-category {
   text-align: center;
-  /* border: 1px solid black; */
   margin-top: 2.5%;
+  margin-bottom: 2.5%;
   height: 100%;
-  width: 70%;
-  padding: 5% 5% 0 5%;
+  width: 75%;
+  padding: 5% 5% 5% 5%;
   color: #8b4513;
   font-family: "Montserrat", sans-serif;
   font-size: 75%;
@@ -334,6 +309,21 @@ footer a {
   padding: 5%;
   color: #3a3a3a;
 }
+
+#footer-div {
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding: 5px;
+  background-color: black;
+}
+
+#footer-div p {
+  color: white;
+  margin: 0;
+  font-size: 70%;
+} 
+
 
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
