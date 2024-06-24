@@ -244,13 +244,6 @@ main {
   text-transform: uppercase;
  }
 
-
-@media (max-width: 600px) {
-  .carousel-slide {
-    flex: 1 0 80%;
-  }
-}
-
 footer {
   position: absolute;
   width: 100%;
@@ -277,19 +270,53 @@ footer a {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.products {
-  width: 70%;
-  border: 1px solid black;
+  margin-top: 2px;
+  height: 300px;
+  /* align-items: center; */
 
 }
 
 .product-category {
+  text-align: center;
+  /* border: 1px solid black; */
+  margin-top: 2.5%;
+  height: 100%;
+  width: 70%;
+  padding: 5% 5% 0 5%;
+  color: #8b4513;
+  font-family: "Montserrat", sans-serif;
+  font-size: 75%;
+  font-weight: bold;
+  background-color: #FFD700 ;
+  border-radius: 10%;
+}
+
+.products-view-more{
+  width: 75%;
+  height: 32px;
+  background-color: #8b4513;
+  color: white;
+  text-transform: uppercase;
+ }
+
+.product-circle {
+  margin: 0% 22vw 5% 12vw;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  background-color: #FF6347 ;
   border: 1px solid black;
+}
+
+.product-circle > i{
+  font-size: 350%;
+  padding-top: 10vw; 
+  color: #4CAF50 ;
+
 }
 
 /* Social Networks icons */
@@ -339,5 +366,11 @@ footer a {
       font-size: 150%;
       line-height: 75px;
       margin: 0 0.5rem;   
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 80%;
   }
 }
