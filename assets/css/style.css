@@ -275,6 +275,22 @@ footer a {
 }
 /* special offers carousel end------------------------------------- */
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products {
+  width: 70%;
+  border: 1px solid black;
+
+}
+
+.product-category {
+  border: 1px solid black;
+}
 
 /* Social Networks icons */
 #social-networks {
@@ -324,3 +340,4 @@ footer a {
       line-height: 75px;
       margin: 0 0.5rem;   
   }
+}
