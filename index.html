@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
     content="Organic Store in Birr Ieeland selling organic groceries, organic products including cheese and coffee">
-<meta name="keywords" content="organic produce, groceries, coffee, cheese, organic, refills">
+    <meta name="keywords" content="organic produce, groceries, coffee, cheese, organic, refills">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
 <!-- Titel -->
 <title>ORGANIC STORE</title>
 <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/organic 256x256.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/organic 32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/organic 16x16.png">
+    <!-- adding Google Icon -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -37,15 +41,26 @@
             
             <!-- to safe space adding social networks icons to menue bar -->
             <ul id="social-networks-dropdown">
-                <li><a href="https://facebook.com" target="_blank" rel="noopener"
+                <li><a href="https://www.facebook.com/p/The-Organic-Store-100043715786810/" target="_blank" rel="noopener"
                         aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com" target="_blank" rel="noopener"
+                <li><a href="https://www.instagram.com/theorganicstorebirr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener"
                     aria-label="visit our Insta page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
-  
+
     <main> 
+        <!-- floating nav element -->
+        <div id="maps-link" class="floating-nav">
+            <a href="https://maps.app.goo.gl/PuUbVanSqYXCNnM26" target="_blank" rel="noopener" aria-label="goto google maps"><i class="fa-sharp fa-solid fa-map-location-dot"></i></a>
+        </div>
+        <div id="opening-hours" class="floating-nav">
+            <i class="fa-regular fa-clock"></i>
+        </div>
+        <div id="contact-form" class="floating-nav">
+            <i class="fa-regular fa-address-card"></i>
+        </div>
+
         <!-- hero image with vision section -->
         <section id="vision">
             <div id="vision-text">
@@ -53,71 +68,7 @@
             </div>
         </section> 
         
-        <!-- special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo -->
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image1" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                    <div id="slide1-text" class="slide-text">
-                        <p>fresh organic honey from field flowers close to Birr</p> <br>
-                        <p>Price EUR 4,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-
-            </div>
-            <div id="slide2" class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image2" class="slide-image" src="/assets/images/2021-02-17_2511147869484336281.jpg" alt="a picture">
-                    <div id="slide2-text" class="slide-text">
-                        <p>fresh organic eggs benedict on fresh sourdough bread</p> <br>
-                        <p>Price EUR 7,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-            </div>
-            <div id="slide3" class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image3" class="slide-image" src="/assets/images/337597734_915330209677557_2017220155745220997_n.webp" alt="a picture">
-                    <div id="slide3-text" class="slide-text">
-                        <p>fresh organic honey from field flowers close to Birr</p> <br>
-                        <p>Price EUR 4,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-            </div>
-            <div id="slide4" class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image4" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                    <div id="slide4-text" class="slide-text">
-                        <p>fresh organic honey from field flowers close to Birr</p> <br>
-                        <p>Price EUR 4,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-            </div>
-            <div id="slide5" class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image5" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                    <div id="slide5-text" class="slide-text">
-                        <p>fresh organic honey from field flowers close to Birr</p> <br>
-                        <p>Price EUR 4,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-            </div>
-            <div id="slide6" class="carousel-slide">
-                <div id="slide1" class="slide-content">
-                    <img id="slide-image6" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                    <div id="slide6-text" class="slide-text">
-                        <p>fresh organic honey from field flowers close to Birr</p> <br>
-                        <p>Price EUR 4,95</p> <br>
-                        <input class="slide-view-more" type="button" value="View More">   
-                    </div> 
-                </div>
-            </div>
-        </div>
-
+    
         <!-- product category section -->
         <section id="Product Categories">
         <div class="flex-container">
