@@ -155,11 +155,12 @@ nav {
   top: 82%;
   right: 5%;
   text-align: center;
+  padding: 5px 0 0 0 ;
 }
 .floating-nav {
   position: relative; 
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   z-index: 99;
   border-radius: 50%;
   padding: 5px 0 0 0;
@@ -264,7 +265,7 @@ main {
 }
 .list {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   padding: 16px;
   list-style: none;
   overflow-x: scroll;
@@ -286,12 +287,16 @@ main {
   font-family: sans-serif;
   color: var(--copy-color);
   font-family: var(--std-font), sans-serif;
-  font-weight: bold;
   font-size: 75%;
-  text-align: center;
+  text-align: left;
+  box-shadow: 0 4px 4px var(--shdw-color);
 }
 .list-wrapper {
   position: relative;
+}
+
+.content p {
+  padding: 5px 10px 5px 10px;
 }
 .slide-image {
   width: 100%;
