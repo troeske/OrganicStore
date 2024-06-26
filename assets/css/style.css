@@ -34,6 +34,8 @@
   /* defining the color scheme as custom properties for easy adaptations later  */
   --bkgr-color: #ffffffff;
   --shdw-color: #181d27ff;
+  --box-color: #faf9f9;
+  --box-shadow: #d8f3dc;
   --hdline-on-white: #254d32ff;
   --hdline-on-card: #181d27ff;
   --copy-color: #181d27ff;
@@ -47,8 +49,7 @@
   --emerald: #69b578ff;
   --fern-green: #3a7d44ff;
   --cal-poly-green: #254d32ff;
-  --raisin-black: #181d27ff;
-} */
+  --raisin-black: #181d27ff; */
 }
 
 /* General styles */
@@ -60,6 +61,7 @@ body {
   color:  var(--copy-color);
   font-family: var(--std-font), sans-serif;
   margin: 0px;
+  padding: 0px;
   position: relative;
   background-color: var(--bkgr-color);
 }
@@ -102,19 +104,14 @@ header a {
   text-decoration: none;
   color: inherit;
 }
-
 #menu {
   list-style: none;
   letter-spacing: 2px;
   font-size: 110%;
-
 }
-
 #menu>li {
   margin-bottom: 1em;
-
 }
-
 .active {
   border-bottom: 1px solid var(--empf-color) ;
 }
@@ -129,8 +126,6 @@ nav {
   box-shadow: 0 2px 2px var(--shdw-color);
   display: none;
   top: 100%;
-  /* alighn drop down menue to the right 
-  org: left: 0; width: 100% */
   width: fit-content;
   right: 0;
   text-align: right;
@@ -163,7 +158,6 @@ nav {
   align-content: center;
   text-align: center;
 }
-
 .floating-nav {
   width: 41px;
   height: 41px;
@@ -193,27 +187,28 @@ nav {
 /* Main */
 main {
   /* make main element take up any surplus space  to push footer to bottom */
-  flex: 1 0 auto;
-  /* add margin to the top to prevent content from beeing covered by header */
-  /* margin-top: 47px; */
-  /* enable flex properties for child elements */
+  /* flex: 1 0 auto; 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   /* added from special offers carousal */
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
   min-height: 100vh;
+  /* save some space for footer */
   padding-bottom: 64px;
 }
 
 /* Hero Section for vision */
 #vision {
-  height: 50vh;
-  width: 100%;
-  background: url("../images/2021-03-26_2537931490870063176.jpg") no-repeat center center/cover;
-  /* ../images/2021-02-01_2499584393406262303.jpg or ../images/2021-04-05_2545205393057299317.jpg*/
   position: relative;
-  padding-bottom: 0;
+  top: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  height: 30vh;
+  width: 100%;
+  background: url("../images/2021-03-26_2537931490870063176.jpg") no-repeat center center/cover
 }
 
 #vision-text {
@@ -225,33 +220,50 @@ main {
   font-weight: bold;
   position: absolute;
   bottom: 30px;
-  width: 70%;
-  min-height: 100px;
+  width: 250px;
   padding: 10px;
   border-radius: 5%;
-  margin-left: 1%;
+  margin-left: 3%;
+  text-align: center;
 }
 
-.flex-container {
+/* Product Categories */
+.category-flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 300px;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 8px;
+  left: 0px;
+  margin: 10px;
+  padding: 0;
+/*   border: 1px solid black;  */
 }
-
-.product-category {
+ .product-category {
   text-align: center;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
-  height: 100%;
-  width: 75%;
   padding: 5% 5% 5% 5%;
-  color: #8b4513;
+  color:  var(--hdline-on-card);
   font-family: var(--std-font), sans-serif;
-  font-size: 75%;
   font-weight: bold;
-  background-color: #FFD700;
+  background-color: var(--box-color);
   border-radius: 10%;
+  box-shadow: rgba(45, 106, 79, 0.25) 0px 54px 55px,
+  rgba(45, 106, 79, 0.12) 0px -12px 30px,
+  rgba(45, 106, 79, 0.12) 0px 4px 6px,
+  rgba(45, 106, 79, 0.17) 0px 12px 13px,
+  rgba(45, 106, 79, 0.09) 0px -3px 5px;
+}
+
+.product-category p {
+  font-size: 0.7rem;
+}
+
+.product-category i {
+  font-size: 1.7rem;
 }
 
 .products-view-more {
