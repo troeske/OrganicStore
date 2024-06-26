@@ -100,12 +100,105 @@
          </div>
         </section>
 
+        <!-- special offers carousel example taken from: https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css -->
+        <section>
+            <div class="list-wrapper"></div>
+                <ul class="list">
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                            <p>fresh organic honey from field flowers close to Birr</p> 
+                            <p>Price EUR 4,95</p> 
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="/assets/images/2021-02-17_2511147869484336281.jpg" alt="a picture">
+                            <p>fresh organic eggs benedict on fresh sourdough bread</p> 
+                            <p>Price EUR 7,95</p>   
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="/assets/images/337597734_915330209677557_2017220155745220997_n.webp" alt="a picture">
+                            <p>fresh organic honey from field flowers close to Birr</p> 
+                            <p>Price EUR 4,95</p> 
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                            <p>fresh organic honey from field flowers close to Birr</p>
+                            <p>Price EUR 4,95</p> 
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                            <p>fresh organic honey from field flowers close to Birr</p> 
+                            <p>Price EUR 4,95</p> 
+                        </div>
+                    </li>
+                </ul>
+                <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+                <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+                <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+            </div>
+           
+            <!-- I know no javascript in the project but since I want to impress my sister I opted to use the little script -->
+            <script>
+                const list = document.querySelector(".list");
+            
+                // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+                const item = document.querySelector(".item");
+                const itemWidth = item.offsetWidth;
+            
+                function handleClick(direction) {
+                // Based on the direction we call `scrollBy` with the item width we got earlier
+                if(direction === "previous") {
+                    list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+                } else {
+                    list.scrollBy({ left: itemWidth, behavior: "smooth" });
+                }
+                }
+            </script>
+        </section>
 
-
-
+        <!-- <div class="carousel-container">
+            <div class="carousel-slide">
+                <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                <p>fresh organic honey from field flowers close to Birr</p> 
+                <p>Price EUR 4,95</p> 
+            </div>
+            <div id="slide2" class="carousel-slide">
+                <img class="slide-image" src="/assets/images/2021-02-17_2511147869484336281.jpg" alt="a picture">
+                <p>fresh organic eggs benedict on fresh sourdough bread</p> 
+                <p>Price EUR 7,95</p>   
+            </div>
+            <div id="slide3" class="carousel-slide">
+                    <img class="slide-image" src="/assets/images/337597734_915330209677557_2017220155745220997_n.webp" alt="a picture">
+                    <p>fresh organic honey from field flowers close to Birr</p> 
+                    <p>Price EUR 4,95</p> 
+            </div>
+            <div id="slide4" class="carousel-slide">
+                <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                <p>fresh organic honey from field flowers close to Birr</p>
+                <p>Price EUR 4,95</p> 
+            </div>
+            <div id="slide5" class="carousel-slide">
+                <img class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                <p>fresh organic honey from field flowers close to Birr</p> 
+                <p>Price EUR 4,95</p> 
+            </div>
+            <div class="carousel-slide">
+                <img id="slide-image6" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                <p>fresh organic honey from field flowers close to Birr</p> 
+                <p>Price EUR 4,95</p> 
+            </div>
+        </div> -->
 
         <div id="footer-div">
-            <p>The Organic Store Birr - all rights reserved <i class="fa-regular fa-copyright"></i></p>
+            <p>The Organic Store Birr - all rights reserved <i class="fa-regular fa-copyright"></i>
         </div>
     </main>
     

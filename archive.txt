@@ -148,3 +148,130 @@ CSS
 }
 
 /* special offers carousel end------------------------------------- */
+
+HTML 26.06.2024
+  <!-- special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo -->
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image1" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                    <div id="slide1-text" class="slide-text">
+                        <p>fresh organic honey from field flowers close to Birr</p> 
+                        <p>Price EUR 4,95</p> 
+                    </div> 
+                </div>
+
+            </div>
+            <div id="slide2" class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image2" class="slide-image" src="/assets/images/2021-02-17_2511147869484336281.jpg" alt="a picture">
+                    <div id="slide2-text" class="slide-text">
+                        <p>fresh organic eggs benedict on fresh sourdough bread</p> 
+                        <p>Price EUR 7,95</p>   
+                    </div> 
+                </div>
+            </div>
+            <div id="slide3" class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image3" class="slide-image" src="/assets/images/337597734_915330209677557_2017220155745220997_n.webp" alt="a picture">
+                    <div id="slide3-text" class="slide-text">
+                        <p>fresh organic honey from field flowers close to Birr</p> 
+                        <p>Price EUR 4,95</p> 
+                    </div> 
+                </div>
+            </div>
+            <div id="slide4" class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image4" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                    <div id="slide4-text" class="slide-text">
+                        <p>fresh organic honey from field flowers close to Birr</p>
+                        <p>Price EUR 4,95</p> 
+                    </div> 
+                </div>
+            </div>
+            <div id="slide5" class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image5" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                    <div id="slide5-text" class="slide-text">
+                        <p>fresh organic honey from field flowers close to Birr</p> 
+                        <p>Price EUR 4,95</p> 
+                    </div> 
+                </div>
+            </div>
+            <div id="slide6" class="carousel-slide">
+                <div id="slide1" class="slide-content">
+                    <img id="slide-image6" class="slide-image" src="/assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
+                    <div id="slide6-text" class="slide-text">
+                        <p>fresh organic honey from field flowers close to Birr</p> 
+                        <p>Price EUR 4,95</p> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+CSS 26.06.2024
+        /* special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding-block: 16px 16px;
+  margin: 0px 16px;
+  gap: 12px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  background-color: var(--bkgr-color);
+  box-shadow: 0 4px 4px var(--shdw-color);
+}
+.carousel-container::-webkit-scrollbar {
+  height: 14px;
+  width: calc(100% - 48px);
+}
+.carousel-container::-webkit-scrollbar-track {
+  background: #b1b3b399;
+}
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #29AB87;
+}
+.carousel-container::-webkit-scrollbar-track-piece:start {
+  background: #29AB87;
+}
+.carousel-slide {
+  flex: 1 0 40%;
+  aspect-ratio: 3/2;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  var(--bkgr-color);
+  box-shadow: 0 2px 2px var(--shdw-color);
+  scroll-snap-align: center;
+  border: 1px solid black;
+  witdh
+}
+/* .slide-content {
+  width: 100%;
+  height: 90%;
+  padding: 0;
+  text-align: center;
+} */
+
+.slide-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-slide P {
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 3px 0 2px 0;
+  color: var(--copy-color);
+  font-family: var(--std-font), sans-serif;
+  font-weight: bold;
+  font-size: 75%;
+  text-align: center;
+}
+/* special offers carousel end------------------------------------- */
