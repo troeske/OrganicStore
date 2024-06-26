@@ -150,43 +150,46 @@ nav {
 }
 
 /*  floating nav element class */
-.floating-nav {
+#floating-nav-container {
+  width: 45px;
+  height: 130px;
+  top: 65%;
+  right: 20px;
   position: fixed;
-  display: flex; 
-  border: 1px solid  var(--empf-color);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  /* align-content: center; */
-  z-index: 99;
-  width: 41px;
-  height: 41px;
-  border-radius: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
-  color: var(--empf-color);
-  opacity: 0.7;
+  align-items: center; 
+  align-content: center;
+  text-align: center;
 }
 
+.floating-nav {
+  width: 41px;
+  height: 41px;
+  z-index: 99;
+  border-radius: 50%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 34px;
+  color: var(--empf-color);
+  opacity: 0.7;
+  background-color: var(--bkgr-color); */
+  line-height: 41px;
+}
 .floating-nav a {
   font-size: 30px;
   color: var(--empf-color);
 } 
-
-#maps-link {
-  right: 20px;
-  top: 65%;
-}
-
 #opening-hours {
-  right: 20px;
-  top: 70%;
+  position: relative; 
+  top: 1px;
+}
+#contact-form {
+  position: relative; 
+  top: 1px;
 }
 
-#contact-form {
-  right: 20px;
-  top: 75%;
-}
 /* Main */
 main {
   /* make main element take up any surplus space  to push footer to bottom */
@@ -300,11 +303,13 @@ main {
   left: 0;
   bottom: 0;
   padding: 5px;
-  background-color: #8b4513;
+  background-color:  var(--bkgr-color);
+  z-index: 99;
+  box-shadow: 0 2px 2px var(--shdw-color);
 }
 
 #footer-div p {
-  color: white;
+  color: var(--hdline-on-white);
   margin: 0;
   font-size: 70%;
   font-family: var(--std-font), sans-serif;
