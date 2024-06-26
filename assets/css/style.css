@@ -155,12 +155,11 @@ nav {
   top: 82%;
   right: 5%;
   text-align: center;
-  padding: 5px 0 0 0 ;
 }
 .floating-nav {
   position: relative; 
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   z-index: 99;
   border-radius: 50%;
   padding: 5px 0 0 0;
@@ -265,7 +264,7 @@ main {
 }
 .list {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   padding: 16px;
   list-style: none;
   overflow-x: scroll;
@@ -282,22 +281,19 @@ main {
 .content {
  /*  display: flex; */
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   height: 100%;
   font-family: sans-serif;
   color: var(--copy-color);
   font-family: var(--std-font), sans-serif;
+ /*  font-weight: bold; */
   font-size: 75%;
   text-align: left;
-  box-shadow: 0 4px 4px var(--shdw-color);
 }
 .list-wrapper {
   position: relative;
 }
 
-.content p {
-  padding: 5px 10px 5px 10px;
-}
 .slide-image {
   width: 100%;
   height: 60%;
