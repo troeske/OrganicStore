@@ -57,14 +57,13 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* generic project styles */
   color:  var(--copy-color);
   font-family: var(--std-font), sans-serif;
   margin: 0px;
   padding: 0px;
   position: relative;
   background-color: var(--bkgr-color);
-}
+} 
 
 /* H1 style */
 h1,
@@ -74,26 +73,33 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--hdline-on-white);
+  padding-left: 0.5rem;
+  font-size: 80%;
+  margin: 0 0 0 0;
+}
+
+.sections {
+  margin: 0% 0 5% 0;
 }
 
 .hidden-heading {
   display: none;
 }
-
 #logo {
   font-family: NouveauYearsJNL, serif;
+  font-size: 130%;
 }
 
 /* Header */
 header {
+  position: sticky;
   background-color: var(--bkgr-color);
   padding: 0 1.5rem 0 0.5rem;
-  position: sticky;
   top: 0;
   left: 0;
   z-index: 99;
   width: 100%;
-  box-shadow: 0 2px 2px var(--shdw-color);
+  box-shadow: 0 4px 4px var(--shdw-color);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -117,29 +123,26 @@ header a {
 }
 
 
-/* navbar styles with drop down toggle */
+/* menu drop down */
 nav {
   position: absolute;
   background-color: var(--bkgr-color);
   padding: 0 1rem;
   z-index: 99;
-  box-shadow: 0 2px 2px var(--shdw-color);
+  box-shadow: 0 1px 1px var(--shdw-color);
   display: none;
   top: 100%;
   width: fit-content;
   right: 0;
   text-align: right;
 }
-
 /* nav toggle */
 #nav-toggle:checked~nav {
   display: block;
 }
-
 #nav-toggle {
   display: none;
 }
-
 .nav-toggle-label {
   font-size: 2rem;
 }
@@ -148,55 +151,42 @@ nav {
 #floating-nav-container {
   position: fixed;
   width: 45px;
-  height: 130px;
+  height: 100px;
   top: 82%;
   right: 5%;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; 
-  align-content: center; */
   text-align: center;
 }
 .floating-nav {
-  width: 41px;
-  height: 41px;
+  position: relative; 
+  width: 34px;
+  height: 34px;
   z-index: 99;
   border-radius: 50%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  font-size: 34px;
+  padding: 5px 0 0 0;
+  font-size: 28px;
   color: var(--empf-color);
   opacity: 0.7;
-/*   background-color: var(--bkgr-color); */ 
-  line-height: 41px;
+  line-height: 40px;
 }
 .floating-nav a {
-  font-size: 30px;
+  font-size: 28px;
   color: var(--empf-color);
 } 
-#opening-hours {
-  position: relative; 
-  top: 1px;
-}
-#contact-form {
-  position: relative; 
-  top: 1px;
-}
 
 /* Main */
 main {
   /* make main element take up any surplus space  to push footer to bottom */
-  /* flex: 1 0 auto; 
+ /*  flex: 1 0 auto; 
   display: flex;
-  flex-direction: column; */
-  /* added from special offers carousal */
+  flex-direction: column;  
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  align-items: center; 
+  min-height: 100vh; 
   /* save some space for footer */
-  padding-bottom: 64px;
-}
+  min-height: 100vh;
+  position: absolute;
+  padding-bottom: 50px; 
+} 
 
 /* Hero Section for vision */
 #vision {
@@ -220,10 +210,10 @@ main {
   font-weight: bold;
   position: absolute;
   bottom: 30px;
-  width: 250px;
+  width: 220px;
   padding: 10px;
   border-radius: 5%;
-  margin-left: 3%;
+  margin-left: 1%;
   text-align: center;
 }
 
@@ -237,14 +227,14 @@ main {
   height: auto;
   gap: 8px;
   left: 0px;
-  margin: 10px;
+  margin: 7px;
   padding: 0;
 /*   border: 1px solid black;  */
 }
  .product-category {
   text-align: center;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   padding: 5% 5% 5% 5%;
   color:  var(--hdline-on-card);
   font-family: var(--std-font), sans-serif;
@@ -267,6 +257,11 @@ main {
 }
 
 /* special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
+#special-offers {
+  margin-top: 7.5%;
+  /* border: 1px solid black; */
+
+}
 .list {
   display: flex;
   gap: 8px;
@@ -281,7 +276,7 @@ main {
   height: 200px;
   background-color: #FFF;
   scroll-snap-align: center;
-  border: 1px solid black;
+ /*  border: 1px solid black; */
 }
 .content {
  /*  display: flex; */
