@@ -195,13 +195,14 @@ nav {
   font-weight: bold;
   opacity: 1;
   text-align: left;
+  color: var(--copy-color-on-dark);
 }
 #contact-slideout {
   display: none; /* Hide opening hours #opening-hours-slideout by default */
   color: var(--empf-color);
   position: absolute;
   right: 40px; /* Position to the left of the floating nav */
-  top: 60px;
+  top: 40px;
   white-space: nowrap; /* Ensure text does not wrap */
   background-color: var(--bkgr-color-dark); /* Use the same background color */
   border-radius: 10px; /* Optional: match the nav container's border radius */
@@ -214,6 +215,12 @@ nav {
   opacity: 1;
   text-align: left;
   padding-right: 10px;
+  color: var(--copy-color-on-dark);
+}
+
+#contact-slideout a {
+  color: var(--copy-color-on-dark);
+/*   text-decoration: underline; */
 }
 .hidden {
   display: none;
