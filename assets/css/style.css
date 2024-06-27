@@ -33,6 +33,7 @@
 
   /* defining the color scheme as custom properties for easy adaptations later  */
   --bkgr-color: #ffffffff;
+  --bkgr-color-dark: #254d32ff;
   --shdw-color: #181d27ff;
   --box-color: #faf9f9;
   --box-shadow: #d8f3dc;
@@ -41,6 +42,7 @@
   --copy-color: #181d27ff;
   --alt-copy-color: #254d32ff;
   --empf-color: #63C132;
+  --copy-color-on-dark:#ffffffff;
 
   --std-font: "Poppins";
 
@@ -93,6 +95,7 @@ h3 {
 /* Header */
 header {
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   background-color: var(--bkgr-color);
   padding: 0 1.5rem 0 0.5rem;
   top: 0;
@@ -155,6 +158,7 @@ nav {
   top: 82%;
   right: 5%;
   text-align: center;
+  z-index: 99;
 }
 .floating-nav {
   position: relative; 
@@ -162,11 +166,13 @@ nav {
   height: 34px;
   z-index: 99;
   border-radius: 50%;
-  padding: 5px 0 0 0;
+  margin: 2px 0 2px 0;
+  /* padding: 6px 0 0 0; */
   font-size: 28px;
   color: var(--empf-color);
-  opacity: 0.7;
   line-height: 40px;
+  background-color:var(--bkgr-color) ;
+  opacity: 0.9;
 }
 .floating-nav a {
   font-size: 28px;
@@ -192,12 +198,15 @@ main {
 #vision {
   position: relative;
   top: 0;
+  left: 0;
+  border-radius: 2%;
   padding: 0;
   margin-top: 0;
   margin-bottom: 10px;
   padding: 0;
   height: 30vh;
   width: 100%;
+
   background: url("../images/2021-03-26_2537931490870063176.jpg") no-repeat center center/cover
 }
 
@@ -212,7 +221,7 @@ main {
   bottom: 30px;
   width: 220px;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 2%;
   margin-left: 1%;
   text-align: center;
 }
@@ -257,11 +266,27 @@ main {
 }
 
 /* special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
-#special-offers {
-  margin-top: 7.5%;
-  /* border: 1px solid black; */
-
+.offers {
+  margin-top: 5%; 
 }
+#special-offers {
+  /* creating a gradiant effect fot the background */
+  background: rgb(37, 77, 50);
+  background: linear-gradient(0deg, rgba(37, 77, 50, 1) 33%, rgba(255, 255, 255, 1) 89%);
+  overflow: visible;
+  justify-content: space-around;
+  position: relative;
+}
+
+.offers h3 {
+  font-size: 100%;
+  color:  var(--copy-color);
+}
+
+#offer-cards {
+  position: relative;
+}
+
 .list {
   display: flex;
   gap: 8px;
@@ -270,12 +295,14 @@ main {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
+
 .item {
   flex-shrink: 0;
   width: 60%;
-  height: 200px;
+  height: 300px;
   background-color: #FFF;
   scroll-snap-align: center;
+  border-radius: 5%;
  /*  border: 1px solid black; */
 }
 .content {
@@ -283,15 +310,19 @@ main {
   align-items: center;
   justify-content: left;
   height: 100%;
-  font-family: sans-serif;
   color: var(--copy-color);
   font-family: var(--std-font), sans-serif;
- /*  font-weight: bold; */
   font-size: 75%;
   text-align: left;
 }
-.list-wrapper {
-  position: relative;
+
+.content p {
+  padding-left: 5%;
+}
+
+.pricing {
+  font-weight: bold;
+  padding-top: 3%;
 }
 
 .slide-image {
@@ -300,11 +331,12 @@ main {
   object-fit: cover;
   justify-content: center;
   align-items: center;
+  border-radius: 5%;
 }
 
 .button {
   position: absolute;
-  top: 70%;
+  top: 40%;
   width: 2rem;
   height: 2rem;
   transform: translateY(-50%);
@@ -317,10 +349,48 @@ main {
 .button--next {
   right: 1.5rem;
   /* somehow next button is not on same top value then the previous button and I can't figure out why  */
-  top: 72%; 
+  top: 45%; 
 
 }
 /* special offers carousel end------------------------------------- */
+
+
+/* foundation section */
+.foundation-left {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.foundation-right {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+#foundation {
+  margin: 30px 0px 30px 0px;
+  width: 90%;
+}
+
+#guiding-principles {
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#guiding-principles h3 {
+  font-family: var(--std-font) sans-serif;
+  margin-bottom: 1%;
+  text-decoration: underline;
+  font-size: 100%;
+  text-underline-offset: 3px;
+}
+
+#guiding-principles p {
+  font-size: 75%;
+  padding-left: 0.5rem;
+
+}
+
 
 /* Social Networks icons */
 #social-networks {
