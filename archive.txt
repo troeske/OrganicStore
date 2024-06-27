@@ -1,3 +1,87 @@
 Archive of code snipeds
 relativ: assets/images/2020-12-05_2457396479150999805.jpg
 absolut: /workspace/OrganicStore/assets/images/2020-12-05_2457396479150999805.jpg
+
+At Organic Store, we are committed to offering only certified organic products to our customers. Each item in our inventory meets stringent organic standards, ensuring that you receive the highest quality produce and goods free from synthetic pesticides, fertilizers, and genetically modified organisms (GMOs). Our dedication to organic certification guarantees that every product you purchase from us supports a healthier lifestyle and a more sustainable planet. We believe in transparency and trust, and our certified organic products reflect our promise to provide safe, nutritious, and eco-friendly options for you and your family.
+
+At Organic Store, we proudly offer only certified organic products. Our inventory meets strict organic standards, ensuring high-quality items free from synthetic pesticides, fertilizers, and GMOs. By choosing our certified organic products, you support a healthier lifestyle and a more sustainable planet. Trust in our commitment to provide safe, nutritious, and eco-friendly options for you and your family.
+
+<p>We only sell certified organic products from vendors we hand select and trust.</p>
+<p>We source as local as possible and only include products from outside when necessary to give you the best options ons the marktet</p>
+                    <p>We enforce strict recycling rules for us and wherever possible sell goods only in recycling containers</p>
+
+<section id="foundation">
+            <div id="guiding-principles">
+                <h2>At Organic Store</h2>
+                <div id="organic-products" class="foundation-left">
+                    <h3>Organic Products</h3>
+                    <p>
+                        we proudly offer only certified organic products. Our inventory meets strict
+                        organic standards, ensuring high-quality items free from synthetic pesticides, fertilizers, and
+                        GMOs. By choosing our certified organic products, you support a healthier lifestyle and a more
+                        sustainable planet. Trust in our commitment to provide safe, nutritious, and eco-friendly
+                        options for you and your family.
+                    </p>
+                </div>
+
+                <div id="local-sourcing" class="foundation-right">
+                    <h3>Local Sourcing</h3>
+                    <p> we prioritize sourcing locally whenever possible to support our community and
+                        reduce our environmental footprint. However, when local options are unavailable, we carefully
+                        select non-local products to ensure you receive the best quality. Our commitment to local
+                        sourcing and exceptional standards guarantees that you always enjoy fresh, sustainable, and
+                        top-quality products.
+                    </p>
+                </div>
+
+                <div id="recycling" class="foundation-left">
+                    <h3>Recycling</h3>
+                    <p>we are dedicated to sustainability by offering products in recyclable and refillable containers
+                        and packaging. Our commitment to eco-friendly practices ensures that you can enjoy our
+                        high-quality products while minimizing environmental impact. By choosing our store, you join us
+                        in promoting a greener future through responsible consumption and waste reduction.</p>
+                </div>
+
+            </div>
+        </section>
+
+        }
+.foundation-left {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.foundation-right {
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+#foundation {
+  margin: 100px 0px 30px 0px;
+  width: 100%;
+}
+
+#guiding-principles {
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#guiding-principles h2 {
+  font-family: var(--std-font) sans-serif;
+  margin-bottom: 1%;
+  font-size: 100%;
+}
+#guiding-principles h3 {
+  font-family: var(--std-font) sans-serif;
+  margin-bottom: 1%;
+  text-decoration: underline;
+  font-size: 75%;
+  text-underline-offset: 3px;
+}
+
+#guiding-principles p {
+  font-size: 75%;
+  padding-left: 0.5rem;
+
+}

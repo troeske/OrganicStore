@@ -232,7 +232,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: auto;
   gap: 10px;
   left: 0px;
@@ -244,7 +244,7 @@ main {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 3%; */
+  padding: 3%; 
   color:  var(--hdline-on-card);
   font-family: var(--std-font), sans-serif;
   font-weight: bold;
@@ -267,7 +267,7 @@ main {
 
 /* special offers carousel example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
 .offers {
-  margin-top: 5%; 
+  margin-top: 7.5%; 
 }
 #special-offers {
   /* creating a gradiant effect fot the background */
@@ -276,6 +276,7 @@ main {
   overflow: visible;
   justify-content: space-around;
   position: relative;
+  border-radius: 3%;
 }
 
 .offers h3 {
@@ -355,40 +356,75 @@ main {
 /* special offers carousel end------------------------------------- */
 
 
-/* foundation section */
-.foundation-left {
-  text-align: left;
-  padding-left: 0.5rem;
-}
-
-.foundation-right {
-  text-align: right;
-  padding-right: 0.5rem;
-}
-
-#foundation {
-  margin: 30px 0px 30px 0px;
-  width: 90%;
-}
+/* guiding-principles section */
 
 #guiding-principles {
   line-height: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
 
+/* heading left and vertical */
+.grid-container-left {
+  display: grid;
+  grid-template-columns: 40px 1fr; /* Adjusted for one row with specific column sizes */
+  gap: 1px;
+}
+.horizontal-left {
+  text-align:left; /* left aligns the text horizontally */  
+}
+.vertical-left{
+  writing-mode: vertical-rl;
+  line-height: 30px;
+  text-align: center;
+  align-items: center; /* This will vertically center the content */
+  justify-content: center; /* Horizontally centers the content */
+  background-color:var(--bkgr-color-dark);
+  color: var(--copy-color-on-dark);
+}
+
+/* heading right and vertical */
+.grid-container-right {
+  display: grid;
+  grid-template-columns: 1fr 40px; /* Adjusted for one row with specific column sizes */
+  gap: 1px;
+}
+.horizontal-right {
+  text-align:right; /* left aligns the text horizontally */  
+}
+.vertical-right{
+  writing-mode: vertical-rl;
+  line-height: 30px;
+  text-align: center;
+  align-items: center; /* This will vertically center the content */
+  justify-content: center; /* Horizontally centers the content */
+  background-color:var(--bkgr-color-dark);
+  color: var(--copy-color-on-dark);
+}
+
+
+#guiding-principles h2 {
+  font-family: var(--std-font) sans-serif;
+  margin-bottom: 3%;
+  font-size: 100%;
+}
 #guiding-principles h3 {
   font-family: var(--std-font) sans-serif;
   margin-bottom: 1%;
-  text-decoration: underline;
-  font-size: 100%;
-  text-underline-offset: 3px;
+  font-size: 75%;
+  color: var(--copy-color-on-dark);
 }
 
 #guiding-principles p {
-  font-size: 75%;
+  font-size: 80%;
   padding-left: 0.5rem;
-
+  padding-right: 0.5rem;
 }
 
 
@@ -414,13 +450,13 @@ main {
   left: 0;
   bottom: 0;
   padding: 5px;
-  background-color:  var(--bkgr-color);
+  background-color: var(--bkgr-color-dark);
   z-index: 99;
   box-shadow: 0 2px 2px var(--shdw-color);
 }
 
 #footer-div p {
-  color: var(--hdline-on-white);
+  color: var(--copy-color-on-dark);
   margin: 0;
   font-size: 70%;
   font-family: var(--std-font), sans-serif;
