@@ -201,29 +201,27 @@ main {
   left: 0;
   border-radius: 2%;
   padding: 0;
-  margin-top: 0;
+  margin-top: 15%;
   margin-bottom: 10px;
   padding: 0;
   height: 30vh;
   width: 100%;
-
-  background: url("../images/2021-03-26_2537931490870063176.jpg") no-repeat center center/cover
+  background: url("../images/organic-farm-harvests-fresh-fruit-vegetables-generated-by-ai_188544-36467.avif") no-repeat center center/cover
 }
 
 #vision-text {
-  background-color: var(--bkgr-color);
-  color: var(--empf-color);
-  opacity: 0.8;
-  font-size: 100%;
+  color: var(--copy-color-on-dark);
+  font-size: 130%;
+  text-transform: uppercase;
   font-family: var(--std-font), sans-serif;
   font-weight: bold;
   position: absolute;
   bottom: 30px;
-  width: 220px;
+  width: 300px;
   padding: 10px;
   border-radius: 2%;
   margin-left: 1%;
-  text-align: center;
+  text-align: left;
 }
 
 /* Product Categories */
@@ -234,7 +232,7 @@ main {
   align-items: center;
   width: 100%;
   height: auto;
-  gap: 8px;
+  gap: 10px;
   left: 0px;
   margin: 7px;
   padding: 0;
@@ -244,7 +242,7 @@ main {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
-  padding: 5% 5% 5% 5%;
+  padding: 3%; */
   color:  var(--hdline-on-card);
   font-family: var(--std-font), sans-serif;
   font-weight: bold;
