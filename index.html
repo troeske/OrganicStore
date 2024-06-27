@@ -71,7 +71,7 @@
         document.getElementById('opening-hours').addEventListener('click', function() {
         var openingHours = document.getElementById('opening-hours-slideout');
         
-        if (openingHours.style.display === "none") {
+        if (openingHours.style.display === "none" || openingHours.style.display === "") {
             openingHours.style.display = "block"; // Show opening hours
         } else {
             openingHours.style.display = "none"; // Hide opening hours
