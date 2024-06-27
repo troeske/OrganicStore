@@ -179,6 +179,29 @@ nav {
   font-size: 28px;
   color: var(--empf-color);
 } 
+#opening-hours-slideout {
+  display: none; /* Hide opening hours #opening-hours-slideout by default */
+  color: var(--empf-color);
+  position: absolute;
+  right: 40px; /* Position to the left of the floating nav */
+  top: 15px;
+  white-space: nowrap; /* Ensure text does not wrap */
+  background-color: var(--bkgr-color-dark); /* Use the same background color */
+  border-radius: 10px; /* Optional: match the nav container's border radius */
+  padding: 5px;
+  opacity: 1; /* Change opacity to 1 to make it not opaque */
+  z-index: 99;
+}
+
+#opening-hours-slideout p {
+  font-weight: bold;
+  opacity: 1;
+  text-align: left;
+}
+.hidden {
+  display: none;
+}
+
 
 /* Main ************************************************ */
 main {
