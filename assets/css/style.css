@@ -27,8 +27,8 @@
 
 /* Asterisk wild card selector to override default styles - taken from Love Running project*/
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 
   /* defining the color scheme as custom properties for easy adaptations later  */
@@ -64,6 +64,8 @@ body {
   margin: 0px;
   padding: 0px;
   position: relative;
+  top: 0px;
+  left: 0px;
   background-color: var(--bkgr-color);
 } 
 
@@ -77,16 +79,17 @@ h3 {
   color: var(--hdline-on-white);
   padding-left: 0.5rem;
   font-size: 80%;
-  margin: 0 0 0 0;
 }
 
 .sections {
-  margin: 0% 0 5% 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hidden-heading {
   display: none;
 }
+
 #logo {
   font-family: NouveauYearsJNL, serif;
   font-size: 130%;
@@ -94,15 +97,14 @@ h3 {
 
 /* Header */
 header {
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
+  position: fixed;
   background-color: var(--bkgr-color);
   padding: 0 1.5rem 0 0.5rem;
   top: 0;
   left: 0;
   z-index: 99;
   width: 100%;
-  box-shadow: 0 4px 4px var(--shdw-color);
+  box-shadow: 0 2px 2px var(--shdw-color);
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -124,7 +126,6 @@ header a {
 .active {
   border-bottom: 1px solid var(--empf-color) ;
 }
-
 
 /* menu drop down */
 nav {
@@ -167,7 +168,7 @@ nav {
   z-index: 99;
   border-radius: 50%;
   margin: 2px 0 2px 0;
-  /* padding: 6px 0 0 0; */
+
   font-size: 28px;
   color: var(--empf-color);
   line-height: 40px;
@@ -189,8 +190,9 @@ main {
   align-items: center; 
   min-height: 100vh; 
   /* save some space for footer */
+  margin-top: 0px;
   min-height: 100vh;
-  position: absolute;
+  position: relative;
   padding-bottom: 50px; 
 } 
 
