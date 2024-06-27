@@ -96,7 +96,7 @@ h3 {
   font-size: 130%;
 }
 
-/* Header */
+/* Header / Menu Bar ***************************************   */
 header {
   position: fixed;
   background-color: var(--bkgr-color);
@@ -110,7 +110,6 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
-
 /* format the header */
 header a {
   text-decoration: none;
@@ -127,7 +126,6 @@ header a {
 .active {
   border-bottom: 1px solid var(--empf-color) ;
 }
-
 /* menu drop down */
 nav {
   position: absolute;
@@ -152,7 +150,7 @@ nav {
   font-size: 2rem;
 }
 
-/*  floating nav element class */
+/*  floating nav element class *****************************  */
 #floating-nav-container {
   position: fixed;
   width: 40px;
@@ -162,7 +160,7 @@ nav {
   text-align: center;
   z-index: 99;
   background-color: var(--bkgr-color);
-  opacity: 0.9;
+  opacity: 0.8;
   border-radius: 10%;
   padding-left: 2.5px;
   padding-bottom: 1px;
@@ -205,7 +203,7 @@ main {
   left: 0;
   border-radius: 2%;
   padding: 0;
-  margin-top: 49px;
+  margin-top: 49px; /* to accomodate for the menu bar */
   margin-bottom: 10px;
   padding: 0;
   height: 30vh;
@@ -256,11 +254,11 @@ main {
   font-weight: bold;
   background-color: var(--box-color);
   border-radius: 10%;
-  box-shadow: rgba(45, 106, 79, 0.25) 0px 14px 55px,
-  rgba(45, 106, 79, 0.12) 0px -12px 20px,
-  rgba(45, 106, 79, 0.12) 0px 4px 6px,
-  rgba(45, 106, 79, 0.17) 0px 12px 13px,
-  rgba(45, 106, 79, 0.09) 0px -3px 5px;
+  box-shadow: rgba(37, 77, 50, 0.25) 0px 14px 55px,
+  rgba(37, 77, 50, 0.12) 0px -12px 20px,
+  rgba(37, 77, 50, 0.12) 0px 4px 6px,
+  rgba(37, 77, 50, 0.17) 0px 12px 13px,
+  rgba(37, 77, 50, 0.09) 0px -3px 5px;
 }
 
 .product-category p {
@@ -322,6 +320,9 @@ main {
 }
 .restrictions {
   margin-bottom: 5px;
+}
+.offer-text {
+  font-size: 110%;
 }
 .pricing {
   font-weight: bold;
@@ -456,7 +457,7 @@ main {
 
 #footer-div p {
   color: var(--copy-color-on-dark);
-  margin: 0;
+  padding-left: 8px;
   font-size: 70%;
   font-family: var(--std-font), sans-serif;
 }
