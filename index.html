@@ -64,20 +64,42 @@
         <div id="contact-form" class="floating-nav">
             <i class="fa-regular fa-address-card"></i>
         </div>
+        <div id="contact-slideout" class="hidden">
+            <p>eMail: orders@organicstore.ie</p>
+            <p>Phone: (057) 912 5881</p>
+          </div>
     </div>
     
     <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
+    <!-- for the opening hours -->
     <script>
         document.getElementById('opening-hours').addEventListener('click', function() {
         var openingHours = document.getElementById('opening-hours-slideout');
-        
+        var contactDetails = document.getElementById('contact-slideout');
+
         if (openingHours.style.display === "none" || openingHours.style.display === "") {
             openingHours.style.display = "block"; // Show opening hours
+            contactDetails.style.display = "none"; // Hide opening hours
         } else {
             openingHours.style.display = "none"; // Hide opening hours
         }
         });
+      
+        /* for the contact details */
+        document.getElementById('contact-form').addEventListener('click', function() {
+        var contactDetails = document.getElementById('contact-slideout');
+        var openingHours = document.getElementById('opening-hours-slideout');
+
+        if (contactDetails.style.display === "none" || contactDetails.style.display === "") {
+            contactDetails.style.display = "block"; // Show opening hours
+            openingHours.style.display = "none"; // Hide opening hours
+        } else {
+            contactDetails.style.display = "none"; // Hide opening hours
+        }
+        });
+        
     </script>
+   
 
     <main>
         <!-- hero image with vision section -->
