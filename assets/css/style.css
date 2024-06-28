@@ -43,15 +43,9 @@
   --alt-copy-color: #254d32ff;
   --empf-color: #63C132;
   --copy-color-on-dark:#ffffffff;
-
+  
+  /* defining standard font */
   --std-font: "Poppins";
-
-  /* Org from coolors.com
-  --vanilla: #d0db97ff;
-  --emerald: #69b578ff;
-  --fern-green: #3a7d44ff;
-  --cal-poly-green: #254d32ff;
-  --raisin-black: #181d27ff; */
 }
 
 /* General styles */
@@ -496,22 +490,25 @@ main {
   color: #3a3a3a;
 }
 
+/* Footer */
 #footer-div {
   position: absolute;
   width: 100%;
+  height: 48px;
   left: 0;
   bottom: 0;
-  padding: 5px;
+  padding: 0 1rem 0 1rem;
   background-color: var(--bkgr-color-dark);
   z-index: 90;
   box-shadow: 0 2px 2px var(--shdw-color);
+  text-align: left;
 }
 
 #footer-div p {
   color: var(--copy-color-on-dark);
-  padding-left: 8px;
-  font-size: 70%;
+  font-size: 90%;
   font-family: var(--std-font), sans-serif;
+  line-height: 38px;
 }
 
 /* typical breakpoints */
@@ -547,7 +544,6 @@ main {
   #vision {
     height: 35vh;
   }
-
   #vision-text {
     font-size: 250%;
     width: 500px;
@@ -661,7 +657,7 @@ main {
 
   /* special offers carousel ****************************** */
   .offers {
-    margin: 4% 0 3% 0;
+    margin: 4% 3% 3% 3%;
   }
   .offers h2 {
     font-size: 140%;
@@ -685,8 +681,21 @@ main {
    .pricing {
     font-size: 110%;
    }
-
+   .button {
+    top: 91%;
+   }
+    
+    .button--previous {
+      left: 46%;
+    }
+    .button--next {
+      right: 46%;
+    }
 /* Guiding Principles Section ******************************************** */
+#guiding-principles {
+  line-height: 20px;
+  margin: 30px 3% 30px 3%;
+}
 #guiding-principles h2 {
   font-size: 140%;
 }
@@ -706,7 +715,15 @@ main {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
+   /* Vision Section *************************************** */
+ #vision {
+  height: 60vh;
+}
+
+#vision-text {
+  font-size: 500%;
+  width: 900px;
+}
   /* special offers carousel ****************************** */
   .carousel-slide {
     flex: 1 0 50%;
