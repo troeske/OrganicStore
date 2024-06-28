@@ -648,15 +648,15 @@ main {
     gap: 10px;
   }
   .product-category {
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     padding-top: 4%; 
   }
   .product-category p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .product-category i {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   /* special offers carousel ****************************** */
@@ -666,12 +666,25 @@ main {
   .offers h2 {
     font-size: 140%;
   }
+  #special-offers {
+    padding-bottom: 20px;
+  }
   .list {
     gap: 10px;
   }
   .item{
     width: 30%;
+    height: 400px;
   }
+   .restrictions {
+     font-size: 110%;
+   }
+   .offer-text {
+     font-size: 120%;
+   }
+   .pricing {
+    font-size: 110%;
+   }
 
 /* Guiding Principles Section ******************************************** */
 #guiding-principles h2 {
@@ -687,9 +700,9 @@ main {
   font-size: 100%;
 }
 #guiding-principles p {
-  font-size: 115%;
+  font-size: 110%;
 }
-  
+} 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
