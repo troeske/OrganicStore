@@ -437,7 +437,6 @@ main {
 .vertical-left{
   writing-mode: vertical-rl;
   padding-right: 10px;
-  line-height: 40px;
   text-align: center;
   align-items: center; /* This will vertically center the content */
   justify-content: center; /* Horizontally centers the content */
@@ -464,8 +463,6 @@ main {
   background-color:var(--bkgr-color-dark);
   color: var(--copy-color-on-dark);
 }
-
-
 #guiding-principles h2 {
   font-family: var(--std-font) sans-serif;
   margin-bottom: 3%;
@@ -477,7 +474,6 @@ main {
   font-size: 75%;
   color: var(--copy-color-on-dark);
 }
-
 #guiding-principles p {
   font-size: 90%;
   padding-left: 0.5rem;
@@ -527,7 +523,9 @@ main {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+
+}
 
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
@@ -563,7 +561,6 @@ main {
   }
 
   /* special offers carousel ****************************** */
-  
   .offers {
     margin: 4% 0 3% 0;
   }
@@ -574,7 +571,36 @@ main {
     width: 35%;
   }
 
-  /* on bigger screens the social networks should be displayed on the bottom */
+/* Guiding Principles Section ******************************************** */
+.grid-container-left {
+  grid-template-columns: 100px 1fr; /* Adjusted for one row for the header and the second for the content */
+}
+
+.grid-container-right {
+  grid-template-columns: 1fr 100px; /* Adjusted for one row with specific column sizes */
+}
+.vertical-right, .vertical-left {
+  padding: 5px 0 5px 0;
+  line-height: 20px;
+}
+
+.grid-item {
+   margin-bottom: 0px;
+}
+#guiding-principles h3 {
+  font-size: 85%;
+  margin: 0;
+  padding: 0;
+  writing-mode: horizontal-tb; /* Change the writing mode to horizontal */
+}
+
+#guiding-principles p {
+  font-size: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* on bigger screens the social networks should be displayed on the bottom */
   #social-networks-dropdown {
     display: none;
   }
@@ -593,21 +619,13 @@ main {
     margin: 0 0.5rem;
   }
 
-/* Guiding Principles Section ******************************************** */
-  .grid-container-left, .grid-container-right {
-    grid-template-columns: 40px 1fr; /* Adjust grid for medium screens, left-aligned */
+  .button--previous {
+    left: 45%;
   }
-  .vertical-left, .vertical-right {
-    writing-mode: vertical-rl; /* Vertical text for medium and larger screens */
+  .button--next {
+    right: 45%;
   }
-}
-
-.button--previous {
-  left: 45%;
-}
-.button--next {
-  right: 45%;
-}
+  }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -616,12 +634,7 @@ main {
     flex: 1 0 60%;
   }  
   /* Guiding Principles Section ******************************************** */
-    .grid-container-left {
-      grid-template-columns: 40px 1fr; /* Maintain layout for large devices */
-    }
-    .grid-container-right {
-      grid-template-columns: 1fr 40px; /* Adjust for right-aligned vertical text */
-    }
+   
 }
   
 
@@ -634,15 +647,5 @@ main {
   }
 
   /* Guiding Principles Section ******************************************** */
-  .grid-container-left, .grid-container-right {
-    grid-template-columns: 50px 1fr; /* Slightly larger vertical text area for extra large screens */
-  }
-  .grid-item {
-    font-size: 100%; /* Reset font size to default for large screens */
-  }
+
 }
-
-
-
-
-
