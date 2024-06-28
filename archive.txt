@@ -84,4 +84,10 @@ At Organic Store, we proudly offer only certified organic products. Our inventor
   font-size: 75%;
   padding-left: 0.5rem;
 
+} /* special offers carousel ****************************** */
+  .carousel-slide {
+    flex: 1 0 60%;
+  }  
+  /* Guiding Principles Section ******************************************** */
+   
 }

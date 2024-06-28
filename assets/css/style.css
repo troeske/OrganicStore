@@ -335,7 +335,7 @@ main {
   position: relative;
   padding-bottom: 15px;
 }
-.offers h3 {
+.offers h2 {
   font-size: 100%;
   color:  var(--copy-color);
 }
@@ -629,12 +629,65 @@ main {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+ /* Vision Section *************************************** */
+ #vision {
+  height: 45vh;
+}
+
+#vision-text {
+  font-size: 350%;
+  width: 700px;
+}
+  /* Product Categories **************************************** */
+  .category-flex-container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .product-category {
+    width: 130px;
+    height: 130px;
+    padding-top: 4%; 
+  }
+  .product-category p {
+    font-size: 1.2rem;
+  }
+  .product-category i {
+    font-size: 2.2rem;
+  }
+
   /* special offers carousel ****************************** */
-  .carousel-slide {
-    flex: 1 0 60%;
-  }  
-  /* Guiding Principles Section ******************************************** */
-   
+  .offers {
+    margin: 4% 0 3% 0;
+  }
+  .offers h2 {
+    font-size: 140%;
+  }
+  .list {
+    gap: 10px;
+  }
+  .item{
+    width: 30%;
+  }
+
+/* Guiding Principles Section ******************************************** */
+#guiding-principles h2 {
+  font-size: 140%;
+}
+.grid-container-left {
+  grid-template-columns: 120px 1fr; /* Adjusted for one row for the header and the second for the content */
+}
+.grid-container-right {
+  grid-template-columns: 1fr 120px; /* Adjusted for one row with specific column sizes */
+}
+#guiding-principles h3 {
+  font-size: 100%;
+}
+#guiding-principles p {
+  font-size: 115%;
 }
   
 
