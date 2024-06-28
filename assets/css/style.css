@@ -333,6 +333,7 @@ main {
   overflow: visible;
   justify-content: space-around;
   position: relative;
+  padding-bottom: 15px;
 }
 .offers h3 {
   font-size: 100%;
@@ -346,8 +347,14 @@ main {
   gap: 8px;
   padding: 16px 16px 40px 8px;
   list-style: none;
-  overflow-x: scroll;
+  overflow-x: auto; /* Changed from scroll to auto */
   scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Chrome, Safari, and other WebKit-based browsers */
+.list::-webkit-scrollbar {
+  display: none;
 }
 .item {
   flex-shrink: 0;
@@ -391,20 +398,17 @@ main {
 }
 .button {
   position: absolute;
-  top: 40%;
+  top: 88%;
   width: 2rem;
-  height: 2rem;
-  transform: translateY(-50%);
-  opacity: 0.75;
+  height: 1.5rem;
+  padding-bottom: 1px;
 }
 .button--previous {
-  left: 1.5rem;
+  left: 40%;
   transform: rotate(180deg);
 }
 .button--next {
-  right: 1.5rem;
-  /* somehow next button is not on same top value then the previous button and I can't figure out why  */
-  top: 45%; 
+  right: 40%;
 }
 
 /* guiding-principles section *********************************** */
@@ -480,7 +484,6 @@ main {
   padding-right: 0.5rem;
 }
 
-
 /* Social Networks icons */
 #social-networks {
   display: none;
@@ -504,7 +507,7 @@ main {
   bottom: 0;
   padding: 5px;
   background-color: var(--bkgr-color-dark);
-  z-index: 99;
+  z-index: 90;
   box-shadow: 0 2px 2px var(--shdw-color);
 }
 
@@ -526,7 +529,6 @@ main {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
 
-/* Medium devices (landscape tablets, 768px and up) */
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
 
@@ -539,6 +541,10 @@ main {
     padding-right: 1rem;
   }
 
+/*  floating nav element class *****************************  */
+#floating-nav-container {
+  top: 85%;
+}
   /* Vision Section *************************************** */
   #vision {
     height: 35vh;
