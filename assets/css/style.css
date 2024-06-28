@@ -96,6 +96,12 @@ h3 {
   font-size: 130%;
 }
 
+.SuperCap {
+  font-family: NouveauYearsObliqueJNL, serif;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+
 /* Header / Menu Bar ***************************************   */
 header {
   position: fixed;
@@ -260,7 +266,7 @@ main {
 
 #vision-text {
   color: var(--copy-color-on-dark);
-  font-size: 130%;
+  font-size: 180%;
   text-transform: uppercase;
   font-family: var(--std-font), sans-serif;
   font-weight: bold;
@@ -401,7 +407,7 @@ main {
   top: 45%; 
 }
 
-/* guiding-principles section ***************************** */
+/* guiding-principles section *********************************** */
 #guiding-principles {
   line-height: 20px;
   margin-top: 30px;
@@ -418,7 +424,7 @@ main {
 /* heading left and vertical */
 .grid-container-left {
   display: grid;
-  grid-template-columns: 40px 1fr; /* Adjusted for one row with specific column sizes */
+  grid-template-columns: 40px 1fr; /* Adjusted for one row for the header and the second for the content */
   gap: 1px;
 }
 .horizontal-left {
@@ -509,11 +515,22 @@ main {
   font-family: var(--std-font), sans-serif;
 }
 
+/* typical breakpoints */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 80%;
+  }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
 
-  /* Header */
+  /* Menue Bar and Header section ****************************************** */
   nav {
     display: block;
     position: relative;
@@ -522,32 +539,97 @@ main {
     padding-right: 1rem;
   }
 
+  /* Vision Section *************************************** */
+  #vision {
+    height: 35vh;
+  }
+
+  #vision-text {
+    font-size: 250%;
+    width: 500px;
+  }
+
+  /* Product Categories **************************************** */
+  .product-category {
+    width: 100px;
+    height: 100px;
+    padding-top: 5.5%; 
+  }
+
+  /* special offers carousel ****************************** */
+  
+  .offers {
+    margin: 4% 0 3% 0;
+  }
+  .list {
+    gap: 10px;
+  }
+  .item{
+    width: 35%;
+  }
+
   /* on bigger screens the social networks should be displayed on the bottom */
   #social-networks-dropdown {
     display: none;
   }
-
   #menu {
     display: flex;
   }
-
   #menu>li {
     padding-left: 1rem
   }
-
   .nav-toggle-label {
     display: none;
   }
-
   #logo {
     font-size: 150%;
     line-height: 75px;
     margin: 0 0.5rem;
   }
-}
 
-@media (max-width: 600px) {
-  .carousel-slide {
-    flex: 1 0 80%;
+/* Guiding Principles Section ******************************************** */
+  .grid-container-left, .grid-container-right {
+    grid-template-columns: 40px 1fr; /* Adjust grid for medium screens, left-aligned */
+  }
+  .vertical-left, .vertical-right {
+    writing-mode: vertical-rl; /* Vertical text for medium and larger screens */
   }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* special offers carousel ****************************** */
+  .carousel-slide {
+    flex: 1 0 60%;
+  }  
+  /* Guiding Principles Section ******************************************** */
+    .grid-container-left {
+      grid-template-columns: 40px 1fr; /* Maintain layout for large devices */
+    }
+    .grid-container-right {
+      grid-template-columns: 1fr 40px; /* Adjust for right-aligned vertical text */
+    }
+}
+  
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+  /* special offers carousel ****************************** */
+  .carousel-slide {
+    flex: 1 0 50%;
+  }
+
+  /* Guiding Principles Section ******************************************** */
+  .grid-container-left, .grid-container-right {
+    grid-template-columns: 50px 1fr; /* Slightly larger vertical text area for extra large screens */
+  }
+  .grid-item {
+    font-size: 100%; /* Reset font size to default for large screens */
+  }
+}
+
+
+
+
+
