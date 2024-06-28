@@ -602,6 +602,13 @@ main {
   }
 }
 
+.button--previous {
+  left: 45%;
+}
+.button--next {
+  right: 45%;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /* special offers carousel ****************************** */
