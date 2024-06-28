@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-    content="Organic Store in Birr Ieeland selling organic groceries, organic products including cheese and coffee">
+        content="Organic Store in Birr Ieeland selling organic groceries, organic products including cheese and coffee">
     <meta name="keywords" content="organic produce, groceries, coffee, cheese, organic, refills">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<!-- Titel -->
-<title>ORGANIC STORE</title>
-<!-- Favicon -->
+    <!-- Titel -->
+    <title>ORGANIC STORE</title>
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/organic 256x256.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/organic 32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/organic 16x16.png">
     <!-- adding Google Icon -->
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -37,21 +38,24 @@
                 <li><a href="about.html">About</a></li>
 
             </ul>
-            
+
             <!-- to safe space adding social networks icons to menue bar -->
             <ul id="social-networks-dropdown">
-                <li><a href="https://www.facebook.com/p/The-Organic-Store-100043715786810/" target="_blank" rel="noopener"
-                        aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/theorganicstorebirr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener"
-                    aria-label="visit our Insta page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/p/The-Organic-Store-100043715786810/" target="_blank"
+                        rel="noopener" aria-label="visit our Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/theorganicstorebirr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank" rel="noopener" aria-label="visit our Insta page (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </nav>
     </header>
-  
+
     <!-- floating nav element -->
     <div id="floating-nav-container">
         <div id="maps-link" class="floating-nav">
-            <a href="https://maps.app.goo.gl/PuUbVanSqYXCNnM26" target="_blank" rel="noopener" aria-label="goto google maps"><i class="fa-sharp fa-solid fa-map-location-dot"></i></a>
+            <a href="https://maps.app.goo.gl/PuUbVanSqYXCNnM26" target="_blank" rel="noopener"
+                aria-label="goto google maps"><i class="fa-sharp fa-solid fa-map-location-dot"></i></a>
         </div>
         <div id="opening-hours" class="floating-nav">
             <i class="fa-regular fa-clock"></i>
@@ -60,7 +64,7 @@
             <p>Mon-Fri: 8am - 6:30pm</p>
             <p>Sat: 8am - 6:30pm</p>
             <p>Sun: Closed</p>
-          </div>
+        </div>
         <div id="contact-form" class="floating-nav">
             <i class="fa-regular fa-address-card"></i>
         </div>
@@ -70,39 +74,38 @@
             <br>
             <a href="about.html">Subsribe to newsletter <i class="fa-solid fa-envelope-open-text"></i></a>
             <!-- <p id="subscribe">Subsribe to newsletter <i class="fa-solid fa-envelope-open-text"></i></p> -->
-          </div>
+        </div>
     </div>
-    
+
     <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
     <!-- for the opening hours -->
     <script>
-        document.getElementById('opening-hours').addEventListener('click', function() {
-        var openingHours = document.getElementById('opening-hours-slideout');
-        var contactDetails = document.getElementById('contact-slideout');
+        document.getElementById('opening-hours').addEventListener('click', function () {
+            var openingHours = document.getElementById('opening-hours-slideout');
+            var contactDetails = document.getElementById('contact-slideout');
 
-        if (openingHours.style.display === "none" || openingHours.style.display === "") {
-            openingHours.style.display = "block"; // Show opening hours
-            contactDetails.style.display = "none"; // Hide opening hours
-        } else {
-            openingHours.style.display = "none"; // Hide opening hours
-        }
+            if (openingHours.style.display === "none" || openingHours.style.display === "") {
+                openingHours.style.display = "block"; // Show opening hours
+                contactDetails.style.display = "none"; // Hide opening hours
+            } else {
+                openingHours.style.display = "none"; // Hide opening hours
+            }
         });
-      
+
         /* for the contact details */
-        document.getElementById('contact-form').addEventListener('click', function() {
-        var contactDetails = document.getElementById('contact-slideout');
-        var openingHours = document.getElementById('opening-hours-slideout');
+        document.getElementById('contact-form').addEventListener('click', function () {
+            var contactDetails = document.getElementById('contact-slideout');
+            var openingHours = document.getElementById('opening-hours-slideout');
 
-        if (contactDetails.style.display === "none" || contactDetails.style.display === "") {
-            contactDetails.style.display = "block"; // Show opening hours
-            openingHours.style.display = "none"; // Hide opening hours
-        } else {
-            contactDetails.style.display = "none"; // Hide opening hours
-        }
+            if (contactDetails.style.display === "none" || contactDetails.style.display === "") {
+                contactDetails.style.display = "block"; // Show opening hours
+                openingHours.style.display = "none"; // Hide opening hours
+            } else {
+                contactDetails.style.display = "none"; // Hide opening hours
+            }
         });
-        
     </script>
-   
+
 
     <main>
         <!-- hero image with vision section -->
@@ -110,8 +113,8 @@
             <div id="vision-text">
                 <p>Your local source for all things organic</p>
             </div>
-        </div> 
-        
+        </div>
+
         <!-- product category section -->
         <section id="product-categories">
             <div class="category-flex-container">
@@ -147,67 +150,81 @@
             <h2>Our Special Offers</h2>
             <div id="special-offers">
                 <div class="list-wrapper" id="offer-cards"></div>
-                    <ul class="list">
-                        <li class="item">
-                            <div class="content">
-                                <img class="slide-image" src="assets/images/337597734_915330209677557_2017220155745220997_n.webp" alt="a picture">
-                                <p class="restrictions"><strong>Happy Hour: 8-9am</strong></p>  
-                                <p class="offer-text">Organic <strong>coffe or tea</strong> with a choice of <strong>sausage roll or mince pie</strong></p> 
-                                <p class="pricing">Price: €4</p> 
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="content">
-                                <img class="slide-image" src="assets/images/2021-02-17_2511147869484336281.jpg" alt="a picture">
-                                <p class="restrictions"><strong>all week</strong></p>  
-                                <p class="offer-text">fresh <strong>organic eggs benedict</strong> on fresh sourdough bread</p> 
-                                <p class="pricing">Price: €7,95</p>   
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="content">
-                                <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                                <p class="offer-text"><strong>organic honey</strong> from ivy growing aroun Birr</p> 
-                                <p class="pricing">Price: €4,95</p>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="content">
-                                <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                                <p class="offer-text">fresh organic honey from field flowers close to Birr</p>
-                                <p class="pricing">Price: €4,95</p> 
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="content">
-                                <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg" alt="a picture">
-                                <p class="offer-text">fresh organic honey from field flowers close to Birr</p> 
-                                <p class="pricing">Price: €4,95</p> 
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
-                    <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
-                    <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
-                </div>
+                <ul class="list">
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image"
+                                src="assets/images/337597734_915330209677557_2017220155745220997_n.webp"
+                                alt="a picture">
+                            <p class="restrictions"><strong>Happy Hour: 8-9am</strong></p>
+                            <p class="offer-text">Organic <strong>coffe or tea</strong> with a choice of <strong>sausage
+                                    roll or mince pie</strong></p>
+                            <p class="pricing">Price: €4</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="assets/images/2021-02-17_2511147869484336281.jpg"
+                                alt="a picture">
+                            <p class="restrictions"><strong>all week</strong></p>
+                            <p class="offer-text">fresh <strong>organic eggs benedict</strong> on fresh sourdough bread
+                            </p>
+                            <p class="pricing">Price: €7,95</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg"
+                                alt="a picture">
+                            <p class="offer-text"><strong>organic honey</strong> from ivy growing aroun Birr</p>
+                            <p class="pricing">Price: €4,95</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg"
+                                alt="a picture">
+                            <p class="offer-text">fresh organic honey from field flowers close to Birr</p>
+                            <p class="pricing">Price: €4,95</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="content">
+                            <img class="slide-image" src="assets/images/2021-02-26_2517773917043026919.jpg"
+                                alt="a picture">
+                            <p class="offer-text">fresh organic honey from field flowers close to Birr</p>
+                            <p class="pricing">Price: €4,95</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+                <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+                <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
             </div>
-                <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
-                <script>
-                    const list = document.querySelector(".list");
-                
-                    // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
-                    const item = document.querySelector(".item");
-                    const itemWidth = item.offsetWidth;
-                
-                    function handleClick(direction) {
+            </div>
+            <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
+            <script>
+                const list = document.querySelector(".list");
+
+                // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+                const item = document.querySelector(".item");
+                const itemWidth = item.offsetWidth;
+
+                function handleClick(direction) {
                     // Based on the direction we call `scrollBy` with the item width we got earlier
-                    if(direction === "previous") {
-                        list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+                    if (direction === "previous") {
+                        list.scrollBy({
+                            left: -itemWidth,
+                            behavior: "smooth"
+                        });
                     } else {
-                        list.scrollBy({ left: itemWidth, behavior: "smooth" });
+                        list.scrollBy({
+                            left: itemWidth,
+                            behavior: "smooth"
+                        });
                     }
-                    }
-                </script>
+                }
+            </script>
         </section>
 
         <!-- section to showcase the basic approach of the Organic Store -->
@@ -228,8 +245,8 @@
                     </p>
                 </div>
             </div>
-            
-            <br> 
+
+            <br>
 
             <!-- Local Sourcing -->
             <div class="grid-container-right">
@@ -245,7 +262,7 @@
                     <h3>Local Sourcing</h3>
                 </div>
             </div>
-            
+
             <br>
 
             <!-- Recycling -->
@@ -256,12 +273,13 @@
                 <div class="grid-item horizontal-left">
                     <p> we are dedicated to sustainability by offering products in recyclable and refillable containers
                         and packaging. Our commitment to eco-friendly practices ensures that you can enjoy our
-                        high-quality products while <strong>minimizing environmental impact</strong>. By choosing our store, you join us
+                        high-quality products while <strong>minimizing environmental impact</strong>. By choosing our
+                        store, you join us
                         in promoting a greener future through responsible consumption and waste reduction.
                     </p>
                 </div>
             </div>
-        </div>
+            </div>
 
         </section>
 
@@ -270,12 +288,13 @@
             <p><i class="fa-regular fa-copyright"></i> 2024 The Organic Store Birr & T.Roeske </p>
         </div>
     </main>
-    
-        
-    
-    
-<!-- Font Awesome Kit at the bottom to speed up loading the page-->
-<script src="https://kit.fontawesome.com/41140e06a6.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- Font Awesome Kit at the bottom to speed up loading the page-->
+    <script src="https://kit.fontawesome.com/41140e06a6.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
