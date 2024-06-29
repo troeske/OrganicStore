@@ -399,7 +399,6 @@ main {
 }
 
 .content {
-  /*  display: flex; */
   align-items: center;
   justify-content: left;
   height: 100%;
@@ -842,7 +841,6 @@ main {
   .pricing {
     font-size: 115%;
   }
-  /* Guiding Principles Section ******************************************** */
 }
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */
@@ -862,6 +860,4 @@ main {
   .button {
     display: none;
   }
-  /* Guiding Principles Section ******************************************** */
-
 }

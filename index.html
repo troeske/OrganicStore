@@ -20,6 +20,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- javascript -->
+    <script src="/assets/scripts/myScripts.js"></script>
+
 </head>
 
 <body>
@@ -79,33 +83,10 @@
 
     <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
     <!-- for the opening hours -->
-    <script>
-        document.getElementById('opening-hours').addEventListener('click', function () {
-            var openingHours = document.getElementById('opening-hours-slideout');
-            var contactDetails = document.getElementById('contact-slideout');
-
-            if (openingHours.style.display === "none" || openingHours.style.display === "") {
-                openingHours.style.display = "block"; // Show opening hours
-                contactDetails.style.display = "none"; // Hide opening hours
-            } else {
-                openingHours.style.display = "none"; // Hide opening hours
-            }
-        });
-
-        /* for the contact details */
-        document.getElementById('contact-form').addEventListener('click', function () {
-            var contactDetails = document.getElementById('contact-slideout');
-            var openingHours = document.getElementById('opening-hours-slideout');
-
-            if (contactDetails.style.display === "none" || contactDetails.style.display === "") {
-                contactDetails.style.display = "block"; // Show opening hours
-                openingHours.style.display = "none"; // Hide opening hours
-            } else {
-                contactDetails.style.display = "none"; // Hide opening hours
-            }
-        });
+    <!-- <script>
+       
     </script>
-
+ -->
 
     <main>
         <!-- hero image with vision section -->
@@ -198,33 +179,14 @@
                     </li>
                 </ul>
                 <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
-                <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
-                <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+                <button onclick="handleClick('previous')" id="previous-card" class="button button--previous" type="button">➜</button>
+                <button onclick="handleClick('next')" id="next-card" class="button button--next" type="button">➜</button>
             </div>
             </div>
             <!-- I know no javascript in this project but since I want to impress my sister I opted to use the little script -->
-            <script>
-                const list = document.querySelector(".list");
-
-                // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
-                const item = document.querySelector(".item");
-                const itemWidth = item.offsetWidth;
-
-                function handleClick(direction) {
-                    // Based on the direction we call `scrollBy` with the item width we got earlier
-                    if (direction === "previous") {
-                        list.scrollBy({
-                            left: -itemWidth,
-                            behavior: "smooth"
-                        });
-                    } else {
-                        list.scrollBy({
-                            left: itemWidth,
-                            behavior: "smooth"
-                        });
-                    }
-                }
-            </script>
+           <!--  <script>
+                
+            </script> -->
         </section>
 
         <!-- section to showcase the basic approach of the Organic Store -->
