@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Assuming you have buttons with IDs or classes to attach these events to
-        // Example:
+        // lets attach these events to to buttons
         document.getElementById('previous-card').addEventListener('click', function() {
             handleClick('previous');
         });

@@ -100,7 +100,7 @@ h3 {
 header {
   position: fixed;
   background-color: var(--bkgr-color);
-  padding: 0 1.5rem 0 0.5rem;
+  padding: 0 1.5rem 0 0.2rem;
   top: 0;
   left: 0;
   z-index: 99;
@@ -196,7 +196,7 @@ nav {
   position: absolute;
   right: 40px;
   /* Position to the left of the floating nav */
-  top: 15px;
+  top: 0px;
   white-space: nowrap;
   /* Ensure text does not wrap */
   background-color: var(--bkgr-color-dark);
@@ -223,7 +223,7 @@ nav {
   position: absolute;
   right: 40px;
   /* Position to the left of the floating nav */
-  top: 40px;
+  top: 0px;
   white-space: nowrap;
   /* Ensure text does not wrap */
   background-color: var(--bkgr-color-dark);
