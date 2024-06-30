@@ -255,3 +255,33 @@ main {
   position: relative;
   padding-bottom: 55px;  /* save some space for footer */
 }
+
+/* Footer ***********************************************************  */
+#footer-div {
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    left: 0;
+    bottom: 0;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--bkgr-color-dark);
+    z-index: 90;
+    box-shadow: 0 2px 2px var(--shdw-color);
+    text-align: center;
+  }
+  
+  #footer-div > p {
+    color: var(--copy-color-on-dark);
+    font-size: 90%;
+    font-family: var(--std-font), sans-serif;
+    margin: 0;
+    padding: 0 0 0.5rem 1rem;
+  }
+  
+  #footer-div > a {
+    color: var(--copy-color-on-dark);
+    font-size: 120%;
+    margin: 1rem 0 0 0;
+    padding: 1rem 0.5rem 0 0.5rem;
+  }
+  
