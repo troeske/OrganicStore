@@ -190,22 +190,16 @@ nav {
 }
 
 #opening-hours-slideout {
-  display: none;
-  /* Hide opening hours #opening-hours-slideout by default */
+  display: none; /* Hide opening hours #opening-hours-slideout by default */
   color: var(--empf-color);
   position: absolute;
-  right: 40px;
-  /* Position to the left of the floating nav */
+   right: 40px; /* Position to the left of the floating nav */
   top: 0px;
   white-space: nowrap;
-  /* Ensure text does not wrap */
   background-color: var(--bkgr-color-dark);
-  /* Use the same background color */
   border-radius: 10px;
-  /* Optional: match the nav container's border radius */
   padding: 5px;
   opacity: 1;
-  /* Change opacity to 1 to make it not opaque */
   z-index: 99;
 }
 
@@ -217,22 +211,16 @@ nav {
 }
 
 #contact-slideout {
-  display: none;
-  /* Hide opening hours #opening-hours-slideout by default */
+  display: none; /* Hide opening hours #opening-hours-slideout by default */
   color: var(--empf-color);
   position: absolute;
   right: 40px;
-  /* Position to the left of the floating nav */
   top: 0px;
   white-space: nowrap;
-  /* Ensure text does not wrap */
   background-color: var(--bkgr-color-dark);
-  /* Use the same background color */
   border-radius: 10px;
-  /* Optional: match the nav container's border radius */
   padding: 5px;
   opacity: 1;
-  /* Change opacity to 1 to make it not opaque */
   z-index: 99;
 }
 
@@ -246,7 +234,6 @@ nav {
 
 #contact-slideout a {
   color: var(--copy-color-on-dark);
-  /*   text-decoration: underline; */
 }
 
 .hidden {
@@ -263,11 +250,10 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* save some space for footer */
   margin-top: 0px;
   min-height: 100vh;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 55px;  /* save some space for footer */
 }
 
 /* Hero Section for vision */
@@ -277,8 +263,7 @@ main {
   left: 0;
   border-radius: 2%;
   padding: 0;
-  margin-top: 49px;
-  /* to accomodate for the menu bar */
+  margin-top: 49px; /* to accomodate for the menu bar */
   margin-bottom: 10px;
   padding: 0;
   height: 30vh;
@@ -470,13 +455,11 @@ main {
 .grid-container-left {
   display: grid;
   grid-template-columns: 40px 1fr;
-  /* Adjusted for one row for the header and the second for the content */
   gap: 1px;
 }
 
 .horizontal-left {
   text-align: left;
-  /* left aligns the text horizontally */
 }
 
 .vertical-left {
@@ -484,9 +467,7 @@ main {
   padding-right: 10px;
   text-align: center;
   align-items: center;
-  /* This will vertically center the content */
   justify-content: center;
-  /* Horizontally centers the content */
   background-color: var(--bkgr-color-dark);
   color: var(--copy-color-on-dark);
 }
@@ -495,13 +476,11 @@ main {
 .grid-container-right {
   display: grid;
   grid-template-columns: 1fr 40px;
-  /* Adjusted for one row with specific column sizes */
   gap: 1px;
 }
 
 .horizontal-right {
   text-align: right;
-  /* left aligns the text horizontally */
 }
 
 .vertical-right {
@@ -510,9 +489,7 @@ main {
   padding-right: 10px;
   text-align: center;
   align-items: center;
-  /* This will vertically center the content */
   justify-content: center;
-  /* Horizontally centers the content */
   background-color: var(--bkgr-color-dark);
   color: var(--copy-color-on-dark);
 }
@@ -536,11 +513,6 @@ main {
   padding-right: 0.5rem;
 }
 
-/* Social Networks icons */
-#social-networks {
-  display: none;
-}
-
 #social-networks-dropdown {
   list-style: none;
   padding-bottom: 1rem;
@@ -552,25 +524,33 @@ main {
   color: #3a3a3a;
 }
 
-/* Footer */
+/* Footer ***********************************************************  */
 #footer-div {
   position: absolute;
   width: 100%;
-  height: 48px;
+  height: 55px;
   left: 0;
   bottom: 0;
   padding: 0 1rem 0 1rem;
   background-color: var(--bkgr-color-dark);
   z-index: 90;
   box-shadow: 0 2px 2px var(--shdw-color);
-  text-align: left;
+  text-align: center;
 }
 
-#footer-div p {
+#footer-div > p {
   color: var(--copy-color-on-dark);
   font-size: 90%;
   font-family: var(--std-font), sans-serif;
-  line-height: 38px;
+  margin: 0;
+  padding: 0 0 0.5rem 1rem;
+}
+
+#footer-div > a {
+  color: var(--copy-color-on-dark);
+  font-size: 120%;
+  margin: 1rem 0 0 0;
+  padding: 1rem 0.5rem 0 0.5rem;
 }
 
 /* typical breakpoints */
