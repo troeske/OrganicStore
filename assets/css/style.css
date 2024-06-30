@@ -380,7 +380,6 @@ main {
   background-color: #FFF;
   scroll-snap-align: center;
   border-radius: 5%;
-  /*  border: 1px solid black; */
 }
 
 .content {
@@ -573,12 +572,30 @@ main {
     padding-right: 1rem;
   }
 
-  /*  floating nav element class *****************************  */
+  #menu {
+    display: flex;
+  }
+
+  #menu>li {
+    padding-left: 1rem
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #logo {
+    font-size: 150%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  /*  floating nav element class ****************************************** */
   #floating-nav-container {
     top: 85%;
   }
 
-  /* Vision Section *************************************** */
+  /* Vision Section ****************************************************** */
   #vision {
     height: 35vh;
   }
@@ -588,7 +605,7 @@ main {
     width: 500px;
   }
 
-  /* Product Categories **************************************** */
+  /* Product Categories **************************************************** */
   .product-category {
     width: 100px;
     height: 100px;
@@ -608,15 +625,21 @@ main {
     width: 35%;
   }
 
+  .button--previous {
+    left: 45%;
+  }
+
+  .button--next {
+    right: 45%;
+  }
+
   /* Guiding Principles Section ******************************************** */
   .grid-container-left {
     grid-template-columns: 100px 1fr;
-    /* Adjusted for one row for the header and the second for the content */
   }
 
   .grid-container-right {
     grid-template-columns: 1fr 100px;
-    /* Adjusted for one row with specific column sizes */
   }
 
   .vertical-right,
@@ -633,8 +656,7 @@ main {
     font-size: 85%;
     margin: 0;
     padding: 0;
-    writing-mode: horizontal-tb;
-    /* Change the writing mode to horizontal */
+    writing-mode: horizontal-tb; /* Change the writing mode to horizontal */
   }
 
   #guiding-principles p {
@@ -642,37 +664,17 @@ main {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+}
 
-  /* on bigger screens the social networks should be displayed on the bottom */
-  #social-networks-dropdown {
-    display: none;
+/* Media query: mobilephone in landscape mode (768px and up */
+@media screen and (min-width: 768px) 
+  and (orientation: landscape) {
+  /* we need to adjust the Hero/Vision text to be visible in landscape mode on a mobile*** */
+  #vision-text {
+    font-size: 150%; 
+    width: 100%;
   }
-
-  #menu {
-    display: flex;
-  }
-
-  #menu>li {
-    padding-left: 1rem
-  }
-
-  .nav-toggle-label {
-    display: none;
-  }
-
-  #logo {
-    font-size: 150%;
-    line-height: 75px;
-    margin: 0 0.5rem;
-  }
-
-  .button--previous {
-    left: 45%;
-  }
-
-  .button--next {
-    right: 45%;
-  }
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
