@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Organic Store in Birr Ieeland selling organic groceries, organic products including cheese and coffee">
+    <meta name="keywords" content="organic produce, groceries, coffee, cheese, organic, refills">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Titel -->
+    <title>ORGANIC STORE</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/organic 256x256.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/organic 32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/organic 16x16.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/common.css"> <!-- styles for all elements common for all pages of the site -->
+    <link rel="stylesheet" href="assets/css/index.css"> <!-- styles for index.html -->
+
+    <!-- javascript -->
+    <script src="/assets/scripts/myScripts.js"></script>
+
 </head>
+
 <body>
-    <p>PRODUCTS</p>
+    <header>
+        <a href="index.html">
+            <h3 id="logo"><span class="SuperCap">O</span>rganic <span class="SuperCap">S</span>tore</h3>
+        </a>
+        <!--nav bar -->
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-ellipsis-vertical"></i></label>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- floating nav element -->
+    <div id="floating-nav-container">
+        <div id="maps-link" class="floating-nav">
+            <a href="https://maps.app.goo.gl/PuUbVanSqYXCNnM26" target="_blank" rel="noopener"
+                aria-label="goto google maps"><i class="fa-sharp fa-solid fa-map-location-dot"></i></a>
+        </div>
+        <div id="opening-hours" class="floating-nav">
+            <i class="fa-regular fa-clock"></i>
+        </div>
+        <div id="opening-hours-slideout" class="hidden">
+            <p>Mon-Fri: 8am - 6:30pm</p>
+            <p>Sat: 8am - 6:30pm</p>
+            <p>Sun: Closed</p>
+        </div>
+        <div id="contact-form" class="floating-nav">
+            <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div id="contact-slideout" class="hidden">
+            <p>eMail: orders@organicstore.ie</p>
+            <p>Phone: (057) 912 5881</p>
+            <br>
+            <a href="about.html">Subsribe to newsletter <i class="fa-solid fa-envelope-open-text"></i></a>
+            <!-- <p id="subscribe">Subsribe to newsletter <i class="fa-solid fa-envelope-open-text"></i></p> -->
+        </div>
+    </div>
+
+    <main>
+
+        <div id="footer-div" class="footer">
+            <a href="https://www.facebook.com/p/The-Organic-Store-100043715786810/" target="_blank" rel="noopener"
+                aria-label="visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/theorganicstorebirr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank" rel="noopener" aria-label="visit our Insta page (opens in a new tab)"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <p><i class="fa-regular fa-copyright"></i> 2024 The Organic Store Birr & T.Roeske </p>
+        </div>
+    </main>
+
+    <!-- Font Awesome Kit at the bottom to speed up loading the page-->
+    <script src="https://kit.fontawesome.com/41140e06a6.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
