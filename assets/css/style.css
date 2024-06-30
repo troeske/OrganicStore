@@ -669,12 +669,15 @@ main {
 /* Media query: mobilephone in landscape mode (667px and up */
 @media screen and (min-width: 667px) 
   and (orientation: landscape) {
-  /* we need to adjust the Hero/Vision text to be visible in landscape mode on a mobile*** */
+  /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
   #vision-text {
     font-size: 150%; 
     width: 100%;
   }
-    
+
+   #floating-nav-container {
+    top: 65%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
