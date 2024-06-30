@@ -666,8 +666,8 @@ main {
   }
 }
 
-/* Media query: mobilephone in landscape mode (768px and up */
-@media screen and (min-width: 768px) 
+/* Media query: mobilephone in landscape mode (667px and up */
+@media screen and (min-width: 667px) 
   and (orientation: landscape) {
   /* we need to adjust the Hero/Vision text to be visible in landscape mode on a mobile*** */
   #vision-text {
