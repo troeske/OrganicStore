@@ -17,7 +17,7 @@
   #products-hero-text {
     border-radius: 2%;
     background-color: rgba(37, 77, 50, 0.7);
-    bottom: 30px;
+    bottom: 40px;
     position: absolute;
     padding: 5px;
     margin-left: 1%;
@@ -37,12 +37,13 @@
 
 
   /* Product Categories as sub-nav Section **************************************** */
-  
   #product-categories {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    position: relative; /* Ensure this element can overlap with the one above */
+    margin-top: -4vh; /* Pull upwards to overlap with #products-hero */
   }
   
   .category-flex-container {
@@ -61,6 +62,7 @@
     height: 55px;
     margin-top: 1%;
     margin-bottom: 2%;
+    opacity: 0.8;
     padding-top: 3%;
     color: var(--hdline-on-card);
     font-family: var(--std-font), sans-serif;
