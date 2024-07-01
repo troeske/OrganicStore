@@ -92,71 +92,30 @@ At Organic Store, we proudly offer only certified organic products. Our inventor
    
 }
 
-I have the following html code in 'products.html':
- <!-- products categories content section ****************************************************************** -->
-        <section id="products">
-            <h2 class="hidden-heading">Products</h2>
-            <div class="products-grid">
-                <div id="groceries">
-                    <div class="product-img">
-                        <img src="assets/images/zucchini-horizontal.jpg" alt="organic groceries">
-                    </div>
-                    <div class="products-text">
-                        <h3>Organic Groceries</h3>
-                        <p>nfdsjö nflowlojw wwnlwe ewo fweo lw el flw flnkw flw lfnkw 
-
-                        </p>
-                    </div>
+ <section id="product-categories">
+            <h2 class="hidden-heading">Our Product Categories</h2>
+            <div class="category-flex-container">
+                <div class="product-category">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <p>Groceries</p>
                 </div>
-                <div id="coffee-bar">
-                    <div class="product-img">
-                        <img src="assets/images/2022-07-13_2881410850678147643.jpg" alt="coffee bar">
-                    </div>
-                    <div class="products-text">
-                        <h3>Organic Coffee Bar</h3>
-                        <p>nfdsjö nflowlojw wwnlwe ewo fweo lw el flw flnkw flw lfnkw 
-
-                        </p>
-                    </div>
+                <div class="product-category">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <p>Coffee Bar</p>
                 </div>
-                <div id="refills">
-                    <div class="product-img">
-                        <img src="assets/images/Ecover Bio refills.jpeg" alt="refills">
-                    </div>
-                    <div class="products-text">
-                        <h3>Organic Refills</h3>
-                        <p>nfdsjö nflowlojw wwnlwe ewo fweo lw el flw flnkw flw lfnkw 
-
-                        </p>
-                    </div>
+                <div class="product-category">
+                    <i class="fa-solid fa-fill-drip"></i>
+                    <p>Refills</p>
                 </div>
-                <div id="cheese">
-                    <div class="product-img">
-                        <img src="assets/images/2021-06-22_2601754295526138535.jpg" alt="organic cheese">
-                    </div>
-                    <div class="products-text">
-                        <h3>Organic Cheese</h3>
-                        <p>nfdsjö nflowlojw wwnlwe ewo fweo lw el flw flnkw flw lfnkw 
-
-                        </p>
-                    </div>
+                <div class="product-category">
+                    <i class="fa-solid fa-cheese"></i>
+                    <p>Cheese</p>
                 </div>
-                <div id="bread">
-                    <div class="product-img">
-                        <img src="assets/images/2023-12-28_3267748980195641131.heic" alt="organic bread">
-                    </div>
-                    <div class="products-text">
-                        <h3>Organic Bread</h3>
-                        <p>nfdsjö nflowlojw wwnlwe ewo fweo lw el flw flnkw flw lfnkw 
-
-                        </p>
-                    </div>
+                <div class="product-category">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <p>Bread</p>
                 </div>
             </div>
         </section>
 
-        Please create the css code for my 'products.css' based on the following:
-        1. use css grid
-        2. there should be 5 clearly seperated product categroies: #groceries, #coffee-bar, #refills, #cheese, #bread
-        3. each product category starts with an image (class .product-img) followed by an <h3> and a descriptive text in a <p> element
-    
+        
