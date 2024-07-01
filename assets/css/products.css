@@ -1,3 +1,8 @@
+main {
+    /* make main element take up any surplus space  to push footer to bottom */
+    justify-content: start;
+  }
+
 /* Hero Section for vision */
 #products-hero {
     position: relative;
