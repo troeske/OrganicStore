@@ -87,8 +87,13 @@
     /* Product Categories Content Section **************************************** */
     /* General styles for the products grid */
     .products-grid {
-      width: 90%;
+      width: 100%;
       margin: 0 auto; /* Align horizontally in the center of the viewport */
+    }
+
+    .products-frame {
+      padding: 5px 10px 5px 10px;
+      border: 1px solid black;
     }
 
     #groceries,
@@ -100,10 +105,18 @@
       grid-template-columns: 1fr; /* Each category takes full width */
       gap: 10px; /* Margin between categories */
       position: relative; /* Allows absolute positioning of elements inside */
-      background-color: #ffffff; /* Default background color */
-      margin: 5% 0;
+      background-color:  var(--bkgr-color); /* Default background color */
+      color:  var(--alt-copy-color); /* Default text color */
+      margin: 1% 0;
     }
     
+    #coffee-bar,
+    #cheese {
+      background-color: var(--bkgr-color-dark); 
+      color: var(--copy-color-on-dark);
+      
+    }
+
     #groceries-location,
     #coffee-bar-location,
     #refills-location,
@@ -133,8 +146,8 @@
     
     /* Styling for the descriptive text */
     .products-text p {
-      padding: 0 0 5px 0; /* Adds padding around the text for better readability */
-      color: #333; /* Dark text color for readability */
+      padding: 5px; /* Adds padding around the text for better readability */
+     /*  color: #333 */; /* Dark text color for readability */
     }
     
     .back-to-top {
