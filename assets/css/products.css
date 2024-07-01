@@ -1,35 +1,84 @@
-main {
-    /* make main element take up any surplus space  to push footer to bottom */
-    justify-content: start;
-  }
+/* Products Page Styles */
 
 /* Hero Section for vision */
 #products-hero {
-    position: relative;
-    top: 0;
-    left: 0;
+    background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover;
     border-radius: 2%;
-    padding: 0;
+    height: 20vh;
+    left: 0;
     margin-top: 49px; /* to accomodate for the menu bar */
     margin-bottom: 10px;
+    position: relative;
     padding: 0;
-    height: 20vh;
+    top: 0;
     width: 100%;
-    background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover
   }
+
   #products-hero-text {
-    color: var(--copy-color-on-dark);
-    font-size: 180%;
-    text-transform: uppercase;
-    font-family: var(--std-font), sans-serif;
-    font-weight: bold;
-    position: absolute;
-    bottom: 30px;
-    width: 300px;
-    padding: 10px;
     border-radius: 2%;
+    background-color: rgba(37, 77, 50, 0.7);
+    bottom: 30px;
+    position: absolute;
+    padding: 5px;
     margin-left: 1%;
     text-align: left;
+    width: 250px;
   }
   
-  /* Product Categories **************************************** */
+  #products-hero-text > p {
+      color: var(--copy-color-on-dark);
+      font-size: 180%;
+      font-family: var(--std-font), sans-serif;
+      font-weight: bold;
+      opacity: 1;
+      text-decoration: solid;
+      text-transform: uppercase;
+    }
+
+
+  /* Product Categories as sub-nav Section **************************************** */
+  
+  #product-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .category-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 5px;
+  }
+  
+  .product-category {
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-top: 3%;
+    color: var(--hdline-on-card);
+    font-family: var(--std-font), sans-serif;
+    font-weight: bold;
+    background-color: var(--box-color);
+    border-radius: 10%;
+    box-shadow: rgba(37, 77, 50, 0.25) 0px 14px 55px,
+      rgba(37, 77, 50, 0.12) 0px -12px 20px,
+      rgba(37, 77, 50, 0.12) 0px 4px 6px,
+      rgba(37, 77, 50, 0.17) 0px 12px 13px,
+      rgba(37, 77, 50, 0.09) 0px -3px 5px;
+  }
+  
+  .product-category p {
+    font-size: 0.6rem;
+  }
+  
+  .product-category i {
+    font-size: 1.3rem;
+  }
+  
