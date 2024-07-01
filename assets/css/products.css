@@ -93,7 +93,6 @@
 
     .products-frame {
       padding: 5px 10px 5px 10px;
-      border: 1px solid black;
     }
 
     #groceries,
@@ -122,9 +121,11 @@
     #refills-location,
     #cheese-location,
     #bread-location {
-      padding-top: 60px; /* Adjust this value to match our menu bar / header's height */
-      margin-top: -60px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
+      padding-top: 48px; /* height of the header / menu bar */ 
+      margin-top: -48px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
       color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
+      font-size: 0px; /* make the invisble jump location as small as possible */
+      line-height: 0px; /* make the invisble jump location as small as possible */
     }
 
     .product-img img {
