@@ -1,0 +1,30 @@
+/* Hero Section for vision */
+#products-hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 2%;
+    padding: 0;
+    margin-top: 49px; /* to accomodate for the menu bar */
+    margin-bottom: 10px;
+    padding: 0;
+    height: 20vh;
+    width: 100%;
+    background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover
+  }
+  #products-hero-text {
+    color: var(--copy-color-on-dark);
+    font-size: 180%;
+    text-transform: uppercase;
+    font-family: var(--std-font), sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 2%;
+    margin-left: 1%;
+    text-align: left;
+  }
+  
+  /* Product Categories **************************************** */
