@@ -111,7 +111,9 @@
     
     #coffee-bar,
     #cheese {
-      background-color: var(--bkgr-color-dark); 
+     /*  background-color: var(--bkgr-color-dark);  */
+     background: rgb(37,77,50);
+     background: linear-gradient(0deg, rgba(37,77,50,1) 42%, rgba(255,255,255,1) 100%);
       color: var(--copy-color-on-dark);
       
     }
