@@ -84,3 +84,50 @@
     font-size: 1.3rem;
   }
   
+    /* Product Categories Content Section **************************************** */
+    /* General styles for the products grid */
+    #products .products-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Each category takes full width */
+        gap: 10px; /* Margin between categories */
+    }
+    
+    /* Specific styles for each product category */
+    #groceries, #coffee-bar, #refills, #cheese, #bread {
+        position: relative; /* Allows absolute positioning of elements inside */
+        background-color: #ffffff; /* Default background color */
+    }
+    
+    #coffee-bar, #bread {
+        background-color: #254d32ff; /* Alternating background color */
+    }
+    
+    /* Styling for the product image */
+    .product-img {
+        width: 100%;
+        height: auto;
+        overflow: hidden; /* Ensures the image does not overflow its container */
+    }
+    
+    .product-img img {
+        width: 80%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    /* Positioning the <h3> over the image */
+    .products-text h3 {
+        position: absolute;
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        color: white; /* Ensures visibility over the image */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        padding: 5px;
+        border-radius: 5px;
+    }
+    
+    /* Styling for the descriptive text */
+    .products-text p {
+        padding: 10px; /* Adds padding around the text for better readability */
+        color: #333; /* Dark text color for readability */
+    }
