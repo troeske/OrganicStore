@@ -86,10 +86,9 @@
   
     /* Product Categories Content Section **************************************** */
     /* General styles for the products grid */
-    
     .products-grid {
       width: 90%;
-      margin: 5% auto; /* Align horizontally in the center of the viewport */
+      margin: 0 auto; /* Align horizontally in the center of the viewport */
     }
 
     #groceries,
@@ -102,12 +101,17 @@
       gap: 10px; /* Margin between categories */
       position: relative; /* Allows absolute positioning of elements inside */
       background-color: #ffffff; /* Default background color */
-      margin: 10% 0;
+      margin: 5% 0;
     }
     
-    #groceries-location {
-      padding-top: 60px; /* Adjust this value to match your fixed header's height */
-      margin-top: -60px; /* This should be the same value as padding-top but negative */
+    #groceries-location,
+    #coffee-bar-location,
+    #refills-location,
+    #cheese-location,
+    #bread-location {
+      padding-top: 60px; /* Adjust this value to match our menu bar / header's height */
+      margin-top: -60px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
+      color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
     }
 
     .product-img img {

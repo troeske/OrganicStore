@@ -72,6 +72,11 @@
   font-size: 1.7rem;
 }
 
+.product-category a {
+  /* text-decoration: none; */
+  color: var(--hdline-on-card);
+}
+
 /* special offers carousel ****************************** example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
 .offers {
   margin: 9% 0 3% 0;
