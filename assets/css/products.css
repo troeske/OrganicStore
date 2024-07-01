@@ -139,8 +139,8 @@
     /* Positioning the <h3> over the image */
     .products-text h3 {
       position: absolute;
-      font-size: 1rem;
-      top: 10px; /* Adjust as needed */
+      font-size: 1.2rem;
+      top: 15px; /* Adjust as needed */
       left: 10px; /* Adjust as needed */
       color: white; /* Ensures visibility over the image */
       background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
