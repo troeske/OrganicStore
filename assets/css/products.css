@@ -2,171 +2,296 @@
 
 /* Hero Section for vision */
 #products-hero {
-    background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover;
-    border-radius: 2%;
-    height: 20vh;
-    left: 0;
-    margin-top: 49px; /* to accomodate for the menu bar */
-    margin-bottom: 10px;
+  background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover;
+  border-radius: 2%;
+  height: 20vh;
+  left: 0;
+  margin-top: 49px; /* to accomodate for the menu bar */
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0;
+  top: 0;
+  width: 100%;
+}
+
+#products-hero-text {
+  border-radius: 2%;
+  background-color: rgba(37, 77, 50, 0.7);
+  bottom: 40px;
+  position: absolute;
+  padding: 5px;
+  margin-left: 1%;
+  text-align: left;
+  width: 250px;
+}
+
+#products-hero-text > p {
+    color: var(--copy-color-on-dark);
+    font-size: 180%;
+    font-family: var(--std-font), sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    text-decoration: solid;
+    text-transform: uppercase;
+  }
+
+
+/* Product Categories as sub-nav Section **************************************** */
+#product-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative; /* Ensure this element can overlap with the one above */
+  margin-top: -4vh; /* Pull upwards to overlap with #products-hero */
+}
+
+.category-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 5px;
+}
+
+.product-category {
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  opacity: 0.8;
+  padding-top: 3%;
+  color: var(--hdline-on-card);
+  font-family: var(--std-font), sans-serif;
+  font-weight: bold;
+  background-color: var(--box-color);
+  border-radius: 10%;
+  box-shadow: rgba(37, 77, 50, 0.25) 0px 14px 55px,
+    rgba(37, 77, 50, 0.12) 0px -12px 20px,
+    rgba(37, 77, 50, 0.12) 0px 4px 6px,
+    rgba(37, 77, 50, 0.17) 0px 12px 13px,
+    rgba(37, 77, 50, 0.09) 0px -3px 5px;
+}
+
+.product-category p {
+  font-size: 0.6rem;
+}
+
+.product-category i {
+  font-size: 1.3rem;
+}
+
+/* Product Categories Content Section **************************************** */
+/* General styles for the products grid */
+.products-grid {
+  width: 100%;
+  margin: 0 auto; /* Align horizontally in the center of the viewport */
+}
+
+.products-frame {
+  padding: 5px 10px 5px 10px;
+}
+
+#groceries,
+#coffee-bar,
+#refills,
+#cheese,
+#bread {
+  display: grid;
+  grid-template-columns: 1fr; /* Each category takes full width */
+  position: relative; /* Allows absolute positioning of elements inside */
+  background-color:  var(--bkgr-color); /* Default background color */
+  color:  var(--alt-copy-color); /* Default text color */
+  margin: 1% 0;
+}
+
+#coffee-bar,
+#cheese {
+  background-color: var(--bkgr-color-dark); 
+  color: var(--copy-color-on-dark);
+}
+
+.anchor-text-white {
+  color: var(--copy-color-on-dark);
+  text-decoration-color: var(--copy-color-on-dark);
+}
+
+#groceries-location,
+#coffee-bar-location,
+#refills-location,
+#cheese-location,
+#bread-location {
+  padding-top: 48px; /* height of the header / menu bar */ 
+  margin-top: -48px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
+  color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
+  font-size: 0px; /* make the invisble jump location as small as possible */
+  line-height: 2rem; /* make the invisble jump location as small as possible */
+}
+
+.product-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Positioning the <h3> over the image */
+.products-text h3 {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 15px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  color: white; /* Ensures visibility over the image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Styling for the descriptive text */
+.products-text p {
+  padding: 5px; /* Adds padding around the text for better readability */
+  font-size: 1rem;
+}
+
+.back-to-top {
+  background-color: var(--box-color);
+  border: 1px solid var(--hdline-on-card);
+  box-shadow: var(--box-shadow) 2px 2px;
+  border-radius: 5%;
+  color: var(--hdline-on-card);
+  cursor: pointer;
+  font-family: var(--std-font), sans-serif;
+  font-weight: bold;
+  font-size: 0.6rem;
+  height: auto;
+  justify-self: end;
+  line-height: 12px;
+  margin: 0 5px 7px 0;
+  padding: 4px 0 3px 0;
+  text-wrap: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  width: 65px;
+}
+
+    /* Media query: typical breakpoints ************************************** */
+/* *********************************************************************** */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+}
+
+/* Media query: tablets and larger (768px and up */
+@media screen and (min-width: 768px) {
+
+  /* Menue Bar and Header section *********** */
+  nav {
+    display: block;
     position: relative;
-    padding: 0;
-    top: 0;
-    width: 100%;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu>li {
+    padding-left: 1rem
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #logo {
+    font-size: 150%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+
+  /*  floating nav element class ****************************************** */
+  #floating-nav-container {
+    top: 85%;
+  }
+
+  /* Vision Section ****************************************************** */
+  #products-hero {
+    height: 30vh;
   }
 
   #products-hero-text {
-    border-radius: 2%;
-    background-color: rgba(37, 77, 50, 0.7);
-    bottom: 40px;
-    position: absolute;
-    padding: 5px;
-    margin-left: 1%;
-    text-align: left;
-    width: 250px;
+    font-size: 250%;
+    width: 500px;
   }
-  
-  #products-hero-text > p {
-      color: var(--copy-color-on-dark);
-      font-size: 180%;
-      font-family: var(--std-font), sans-serif;
-      font-weight: bold;
-      opacity: 1;
-      text-decoration: solid;
-      text-transform: uppercase;
-    }
 
+ 
+}
 
-  /* Product Categories as sub-nav Section **************************************** */
-  #product-categories {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    position: relative; /* Ensure this element can overlap with the one above */
-    margin-top: -4vh; /* Pull upwards to overlap with #products-hero */
-  }
-  
-  .category-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/* Mobilephones in landscape mode 667px and up */
+@media screen and (min-width: 667px) 
+  and (orientation: landscape) {
+  /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
+  #products-hero-text {
+    font-size: 150%; 
     width: 100%;
-    height: auto;
-    gap: 5px;
   }
-  
-  .product-category {
-    text-align: center;
-    width: 55px;
-    height: 55px;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    opacity: 0.8;
-    padding-top: 3%;
-    color: var(--hdline-on-card);
-    font-family: var(--std-font), sans-serif;
-    font-weight: bold;
-    background-color: var(--box-color);
-    border-radius: 10%;
-    box-shadow: rgba(37, 77, 50, 0.25) 0px 14px 55px,
-      rgba(37, 77, 50, 0.12) 0px -12px 20px,
-      rgba(37, 77, 50, 0.12) 0px 4px 6px,
-      rgba(37, 77, 50, 0.17) 0px 12px 13px,
-      rgba(37, 77, 50, 0.09) 0px -3px 5px;
+
+   #floating-nav-container {
+    top: 65%;
   }
-  
-  .product-category p {
-    font-size: 0.6rem;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  #floating-nav-container {
+    top: 85%;
   }
-  
-  .product-category i {
-    font-size: 1.3rem;
+
+  /* Vision Section *************************************** */
+  #products-hero {
+    height: 40vh;
   }
-  
-    /* Product Categories Content Section **************************************** */
-    /* General styles for the products grid */
-    .products-grid {
-      width: 100%;
-      margin: 0 auto; /* Align horizontally in the center of the viewport */
-    }
 
-    .products-frame {
-      padding: 5px 10px 5px 10px;
-    }
+  #products-hero-text {
+    font-size: 350%;
+    width: 700px;
+  }
 
-    #groceries,
-    #coffee-bar,
-    #refills,
-    #cheese,
-    #bread {
-      display: grid;
-      grid-template-columns: 1fr; /* Each category takes full width */
-      position: relative; /* Allows absolute positioning of elements inside */
-      background-color:  var(--bkgr-color); /* Default background color */
-      color:  var(--alt-copy-color); /* Default text color */
-      margin: 1% 0;
-    }
-    
-    #coffee-bar,
-    #cheese {
-      background-color: var(--bkgr-color-dark); 
-      color: var(--copy-color-on-dark);
-    }
+ 
+}
 
-    #groceries-location,
-    #coffee-bar-location,
-    #refills-location,
-    #cheese-location,
-    #bread-location {
-      padding-top: 48px; /* height of the header / menu bar */ 
-      margin-top: -48px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
-      color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
-      font-size: 0px; /* make the invisble jump location as small as possible */
-      line-height: 2rem; /* make the invisble jump location as small as possible */
-    }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 
-    .product-img img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    
-    /* Positioning the <h3> over the image */
-    .products-text h3 {
-      position: absolute;
-      font-size: 1.2rem;
-      top: 15px; /* Adjust as needed */
-      left: 10px; /* Adjust as needed */
-      color: white; /* Ensures visibility over the image */
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      padding: 5px;
-      border-radius: 5px;
-    }
-    
-    /* Styling for the descriptive text */
-    .products-text p {
-      padding: 5px; /* Adds padding around the text for better readability */
-      font-size: 1rem;
-    }
-    
-    .back-to-top {
-      background-color: var(--box-color);
-      border: 1px solid var(--hdline-on-card);
-      box-shadow: var(--box-shadow) 2px 2px;
-      border-radius: 5%;
-      color: var(--hdline-on-card);
-      cursor: pointer;
-      font-family: var(--std-font), sans-serif;
-      font-weight: bold;
-      font-size: 0.6rem;
-      height: auto;
-      justify-self: end;
-      line-height: 12px;
-      margin: 0 10px 5px 0;
-      padding: 4px 0 3px 0;
-      text-wrap: nowrap;
-      text-align: center;
-      vertical-align: middle;
-      width: 65px;
-    }
+  /* Vision Section *************************************** */
+  #products-hero {
+    height: 45vh;
+  }
+
+  #products-hero-text {
+    font-size: 500%;
+    width: 900px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1736px and up) */
+@media only screen and (min-width: 1736px) {
+
+  /* Vision Section *************************************** */
+  #products-hero {
+    height: 45vh;
+  }
+
+  #products-hero-text {
+    font-size: 600%;
+    width: 1100px;
+  }
+
+}
