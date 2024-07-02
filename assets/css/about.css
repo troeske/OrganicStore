@@ -99,3 +99,54 @@
     margin: 0;
   }
 
+  /* news letter section baseline copied from I love running project*/
+#newsletter {
+  background-size: cover;
+  background-position: 75%;
+  flex-grow: 1;
+  padding: 20px 10% 20px 10%;
+  margin: 10px 0 30px 0;
+ 
+}
+
+#subscribe-form > h2 {
+  color: #fafafa;
+  margin-bottom: 30px;
+}
+
+.text-input {
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  margin: 5px 0 20px 0;
+  height: 25px;
+  width: 100%;
+  background: transparent;
+  padding: 0 5px;
+  
+}
+
+#subscribe-form {
+  padding: 30px;
+  color: var(--copy-color-on-dark) ;
+  background-color: var(--bkgr-color-dark);
+}
+
+.checkboxes {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscribe-button {
+  border-radius: 2px;
+  background-color: var(--empf-color);
+  color: #fafafa;
+  font-size: 100%;
+  margin-top: 20px;
+  align-self: center;
+  width: 90px;
+  height: 40px;
+}

@@ -143,8 +143,34 @@
             </div>
         </section>
 
-        <section id="new-letter">
+        <section id="newsletter">
+            <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
+                <h2><i class="fa-solid fa-envelope-open-text"></i> Subscribe to our Newsletter! </h2>
+                <div>
+                    <label for="first-name">First Name</label><br>
+                    <input id="first-name" name="first-name" type="text" class="text-input" required><br>
+                    <label for="last-name">Last Name</label><br>
+                    <input id="last-name" name="last-name" type="text" class="text-input" required><br>
+                    <label for="email-address">Email Address</label><br>
+                    <input id="email-address" name="email-address" type="email" class="text-input" required><br>
+                    <br>
+                </div>
 
+                <div class="checkboxes">
+                    <label for="offers">Special Offers</label>
+                    <input type="checkbox" id="offers" name="offers" checked/><br>
+
+                    <label for="events">Events</label>
+                    <input type="checkbox" id="events" name="events"/><br>
+                    
+                    <label for="lunch">Lunch Menu</label>
+                    <input type="checkbox" id="lunch" name="lunch"/><br>
+                    
+                    <label for="general">General Info</label>
+                    <input type="checkbox" id="general" name="general" checked/><br>
+                </div>
+                <br>
+                <input type="submit" value="Subscribe" class="subscribe-button">
         </section>
 
 
