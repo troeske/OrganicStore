@@ -305,9 +305,9 @@
     object-fit: cover;
   }
   
-    /* Positioning the <h3> over the image */
-    #coffee-bar .products-text h3,
-    #cheese .products-text h3 {
+  /* Positioning the <h3> over the image */
+  #coffee-bar .products-text h3,
+  #cheese .products-text h3 {
     position: absolute;
     font-size: 1.2rem;
     top: 15px; /* Adjust as needed */
@@ -381,8 +381,21 @@
   .product-category i {
     font-size: 1.5rem;
   }
+  
+  /* Products ************************************************** */
+  #groceries,
+  #refills,
+  #bread {
+    grid-template-columns: 1fr 1fr; /* text part takes the rest of the available width  */
+    grid-template-rows: 500px;
+  }
+  
+  #coffee-bar,
+  #cheese {
+     grid-template-columns: 1fr 1fr; /* text part takes the rest of the available width  */
+    grid-template-rows: 500px;
+  }
  
-}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -397,6 +410,22 @@
     width: 450px;
   }
 
+  #groceries,
+  #refills,
+  #bread {
+    grid-template-rows: 550px;
+  }
+  
+  #coffee-bar,
+  #cheese {
+    grid-template-rows: 550px;
+  }
+
+  /* Styling for the descriptive text */
+  .products-text p {
+    font-size: 1.3rem;
+  }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */
