@@ -176,7 +176,7 @@
   width: 65px;
 }
 
-    /* Media query: typical breakpoints ************************************** */
+/* Media query: typical breakpoints ************************************** */
 /* *********************************************************************** */
 
 /* Extra small devices (phones, 600px and down) */
@@ -221,15 +221,38 @@
 
   /* Vision Section ****************************************************** */
   #products-hero {
-    height: 30vh;
+    height: 25vh;
   }
 
   #products-hero-text {
-    font-size: 250%;
-    width: 500px;
+    font-size: 130%;
+    width: 330px;
   }
 
- 
+    /* Product Categories Sub-Nav ************************************************** */
+    .category-flex-container {
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 12px;
+    }
+  
+    .product-category {
+      width: 65px;
+      height: 65px;
+      padding-top: 3%;
+    }
+  
+    .product-category p {
+      font-size: 0.7rem;
+    }
+  
+    .product-category i {
+      font-size: 1.4rem;
+    }
+
 }
 
 /* Mobilephones in landscape mode 667px and up */
@@ -253,30 +276,48 @@
     top: 85%;
   }
 
-  /* Vision Section *************************************** */
+  /* Products Section *************************************** */
   #products-hero {
-    height: 40vh;
+    height: 30vh;
   }
 
   #products-hero-text {
-    font-size: 350%;
-    width: 700px;
+    font-size: 180%;
+    width: 440px;
   }
 
+ /* Product Categories Sub-Nav ************************************************** */
+ .category-flex-container {
+  gap: 15px;
+}
+
+.product-category {
+  width: 78px;
+  height: 78px;
+  padding-top: 3%;
+}
+
+.product-category p {
+  font-size: 0.8rem;
+}
+
+.product-category i {
+  font-size: 1.5rem;
+}
  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-  /* Vision Section *************************************** */
-  #products-hero {
-    height: 45vh;
+   /* Products Section *************************************** */
+   #products-hero {
+    height: 33vh;
   }
 
   #products-hero-text {
-    font-size: 500%;
-    width: 900px;
+    font-size: 190%;
+    width: 450px;
   }
 
 }
@@ -284,14 +325,14 @@
 /* Extra large devices (large laptops and desktops, 1736px and up) */
 @media only screen and (min-width: 1736px) {
 
-  /* Vision Section *************************************** */
-  #products-hero {
-    height: 45vh;
+   /* Products Section *************************************** */
+   #products-hero {
+    height: 35vh;
   }
 
   #products-hero-text {
-    font-size: 600%;
-    width: 1100px;
+    font-size: 190%;
+    width: 450px;
   }
 
 }
