@@ -414,7 +414,7 @@
   #groceries,
   #refills,
   #bread {
-    grid-template-rows: 480px;
+    grid-template-rows: 550px;
   }
   
   #coffee-bar,
