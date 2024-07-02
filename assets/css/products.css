@@ -102,7 +102,6 @@
     #bread {
       display: grid;
       grid-template-columns: 1fr; /* Each category takes full width */
-      gap: 10px; /* Margin between categories */
       position: relative; /* Allows absolute positioning of elements inside */
       background-color:  var(--bkgr-color); /* Default background color */
       color:  var(--alt-copy-color); /* Default text color */
@@ -111,11 +110,8 @@
     
     #coffee-bar,
     #cheese {
-     /*  background-color: var(--bkgr-color-dark);  */
-     background: rgb(37,77,50);
-     /* background: linear-gradient(0deg, rgba(37,77,50,1) 42%, rgba(255,255,255,1) 100%); */
+      background-color: var(--bkgr-color-dark); 
       color: var(--copy-color-on-dark);
-      
     }
 
     #groceries-location,
@@ -127,7 +123,7 @@
       margin-top: -48px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
       color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
       font-size: 0px; /* make the invisble jump location as small as possible */
-      line-height: 5px; /* make the invisble jump location as small as possible */
+      line-height: 2rem; /* make the invisble jump location as small as possible */
     }
 
     .product-img img {
@@ -167,6 +163,7 @@
       height: auto;
       justify-self: end;
       line-height: 12px;
+      margin: 0 10px 5px 0;
       padding: 4px 0 3px 0;
       text-wrap: nowrap;
       text-align: center;
