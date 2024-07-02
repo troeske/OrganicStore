@@ -387,13 +387,13 @@
   #refills,
   #bread {
     grid-template-columns: 1fr 1fr; /* text part takes the rest of the available width  */
-    grid-template-rows: 500px;
+    grid-template-rows: 480px;
   }
   
   #coffee-bar,
   #cheese {
      grid-template-columns: 1fr 1fr; /* text part takes the rest of the available width  */
-    grid-template-rows: 500px;
+    grid-template-rows: 480px;
   }
  
 
@@ -409,16 +409,17 @@
     font-size: 190%;
     width: 450px;
   }
-
+  
+  /* Products ************************************************** */
   #groceries,
   #refills,
   #bread {
-    grid-template-rows: 550px;
+    grid-template-rows: 480px;
   }
   
   #coffee-bar,
   #cheese {
-    grid-template-rows: 550px;
+    grid-template-rows: 480px;
   }
 
   /* Styling for the descriptive text */
