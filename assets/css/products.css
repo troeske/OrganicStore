@@ -336,12 +336,21 @@
 @media screen and (min-width: 667px) 
   and (orientation: landscape) {
   /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
-  #products-hero-text {
-    font-size: 150%; 
-    width: 100%;
+  /* Products Section *************************************** */
+  #products-hero {
+    height: 40vh;
   }
 
-   #floating-nav-container {
+  #products-hero-text {
+    font-size: 100%; 
+    width: 100%;
+  }
+ 
+  #product-categories {
+    margin-top: -8vh; /* Pull upwards to overlap with #products-hero */
+  }
+ 
+  #floating-nav-container {
     top: 65%;
   }
 }
@@ -425,7 +434,6 @@
   .products-text p {
     font-size: 1.3rem;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */

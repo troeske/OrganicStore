@@ -202,6 +202,9 @@
     top: 85%;
   }
 
+  #about-us-header {
+    margin-top: 100px; /* to accomodate for the menu bar  and some space */
+  }
  
 }
 
