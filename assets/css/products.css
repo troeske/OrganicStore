@@ -106,7 +106,7 @@
 #bread {
   display: grid;
   grid-template-columns: 1fr; /* Each category takes full width */
-  position: relative; /* Allows absolute positioning of elements inside */
+  position: relative;
   background-color:  var(--bkgr-color); /* Default background color */
   color:  var(--alt-copy-color); /* Default text color */
   margin: 1% 0;

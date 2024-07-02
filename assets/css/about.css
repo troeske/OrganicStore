@@ -1,37 +1,42 @@
-/* #about {
+
+/* about us sections *************************************************** */
+#about-section {
     width: 100%;
     margin: 20px;
-} */
+    position: relative;
+} 
 
 #about-us-header {
     font-size: 175%;
     font-weight: bold;
-    margin-top: 49px; /* to accomodate for the menu bar */
+    margin-top: 75px; /* to accomodate for the menu bar  and some space */
     padding: 10;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
   }
 
   .hand-drawn-divider {
-    border-bottom: 2px dashed var(--copy-color);/* Simulates a hand-drawn line */
+    border-bottom: 2px dashed var(--copy-color);
     margin: 0 auto;
     width: 70%;
     margin: 20px auto; 
   }
 
   #about-grid {
+    width: 80%;
+    margin: 0 auto; /* Align horizontally in the center of the viewport */
+  }
+  
+  #about-us-img, 
+  #about-us-text {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  #about-us-img, #about-us-text {
-    max-width: 80%; /* Adjust based on your preference */
-    margin: auto; /* Center the content */
+    position: relative;
+    gap: 10px;
+    padding: 10px;
+    margin: 1% 0;
   }
   
    #about-us-text h2 {
@@ -44,14 +49,53 @@
     margin: 0;
   }
 
+  #about-us-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
   #about-us-text p {
     color: var(--copy-color);
     font-family: var(--std-font), sans-serif;
     font-size: 100%;
   }
-  
-  @media (min-width: 768px) { /* Adjust breakpoint as needed */
-    #about-grid {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
-    }
+
+  /* contact sections *************************************************** */
+  #contact-grid {
+    width: 80%;
+    margin: 0 auto; /* Align horizontally in the center of the viewport */
   }
+  
+  #contact-div, 
+  #opening-hours {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    padding: 10px;
+    margin: 1% 0;
+  }
+  
+   #contact-div, 
+   #opening-hours > h2 {
+    color: var(--copy-color);
+    font-size: 100%;
+    font-weight: bold;
+    font-family: var(--std-font), sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  #contact-div, 
+  #opening-hours > p {
+    color: var(--copy-color);
+    font-family: var(--std-font), sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
