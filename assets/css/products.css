@@ -113,7 +113,7 @@
     #cheese {
      /*  background-color: var(--bkgr-color-dark);  */
      background: rgb(37,77,50);
-     background: linear-gradient(0deg, rgba(37,77,50,1) 42%, rgba(255,255,255,1) 100%);
+     /* background: linear-gradient(0deg, rgba(37,77,50,1) 42%, rgba(255,255,255,1) 100%); */
       color: var(--copy-color-on-dark);
       
     }
@@ -127,7 +127,7 @@
       margin-top: -48px; /* This should be the same value as padding-top but negative to preserve the normal flow*/
       color: var(--bkgr-color);  /* hiding the header but allow us to jump to it  */
       font-size: 0px; /* make the invisble jump location as small as possible */
-      line-height: 0px; /* make the invisble jump location as small as possible */
+      line-height: 5px; /* make the invisble jump location as small as possible */
     }
 
     .product-img img {
