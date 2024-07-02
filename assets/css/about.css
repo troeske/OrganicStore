@@ -73,12 +73,12 @@
     grid-template-columns: 1fr;
     justify-content: center;
     position: relative;
-    gap: 10px;
-    padding: 10px;
+    /* gap: 10px; */
+    padding: 1px;
     margin: 1% 0;
   }
   
-   #contact-div, 
+   #contact-div > h2, 
    #opening-hours > h2 {
     color: var(--copy-color);
     font-size: 100%;
@@ -86,11 +86,11 @@
     font-family: var(--std-font), sans-serif;
     text-transform: uppercase;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 3px 0;
   }
 
 
-  #contact-div, 
+  #contact-div > p, 
   #opening-hours > p {
     color: var(--copy-color);
     font-family: var(--std-font), sans-serif;
