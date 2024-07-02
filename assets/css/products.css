@@ -395,8 +395,7 @@
      grid-template-columns: 1fr 1fr; /* text part takes the rest of the available width  */
     grid-template-rows: 480px;
   }
- 
-
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
@@ -426,7 +425,7 @@
   .products-text p {
     font-size: 1.3rem;
   }
-  }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */

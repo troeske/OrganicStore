@@ -305,7 +305,8 @@
 
   /* Vision Section ****************************************************** */
   #vision {
-    height: 35vh;
+    height: 30vh;
+    margin-top: 80px; /* to accomodate for the menu bar */
   }
 
   #vision-text {
@@ -397,7 +398,7 @@
 
   /* Vision Section *************************************** */
   #vision {
-    height: 45vh;
+    height: 35vh;
   }
 
   #vision-text {
@@ -509,7 +510,7 @@
 
   /* Vision Section *************************************** */
   #vision {
-    height: 50vh;
+    height: 40vh;
   }
 
   #vision-text {
@@ -545,7 +546,7 @@
 
   /* Vision Section *************************************** */
   #vision {
-    height: 55vh;
+    height: 45vh;
   }
 
   #vision-text {
