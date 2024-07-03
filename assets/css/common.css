@@ -34,6 +34,7 @@
   /* defining the color scheme as custom properties for easy adaptations later  */
   --bkgr-color: #ffffffff;
   --bkgr-color-dark: #254d32ff;
+  --bkrg-color-very-dark: #132a13;
   --shdw-color: #181d27ff;
   --box-color: #faf9f9;
   --box-shadow: #d8f3dc;
@@ -94,6 +95,11 @@ h3 {
   font-family: NouveauYearsObliqueJNL, serif;
   font-size: 150%;
   letter-spacing: 2px;
+}
+
+.anchor-text-white {
+  color: var(--copy-color-on-dark);
+  text-decoration-color: var(--copy-color-on-dark);
 }
 
 /* Header / Menu Bar ***************************************   */

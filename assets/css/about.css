@@ -1,4 +1,10 @@
 
+/* main - let'S make it very dark */
+main {
+  background-color:  var(--bkrg-color-very-dark);
+  color: var(--copy-color-on-dark);
+}
+
 /* about us sections *************************************************** */
 #about-section {
     width: 100%;
@@ -7,8 +13,8 @@
 } 
 
 #about-us-header {
-    margin: 75px 20px 20px 20px; /* to accomodate for the menu bar  and some space */
-    padding: 10;
+    margin: 75px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
+    padding: 10px;
     position: relative;
     text-align: center;
   }
@@ -17,15 +23,17 @@
     font-size: 175%;
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--copy-color-on-dark);
   }
 
   #about-us-header > p {
+    color: var(--copy-color-on-dark);
     font-size: 100%;
     margin-top: 10px;
   }
 
   .hand-drawn-divider {
-    border-bottom: 2px dashed var(--copy-color);
+    border-bottom: 2px dashed color: var(--copy-color-on-dark);
     margin: 0 auto;
     width: 70%;
     margin: 20px auto; 
@@ -49,12 +57,12 @@
   }
   
    #about-us-text h2 {
-    color: var(--copy-color);
+    color: var(--copy-color-on-dark);
     font-size: 100%;
     font-weight: bold;
     font-family: var(--std-font), sans-serif;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 0;
     margin: 0;
   }
 
@@ -68,9 +76,11 @@
   }
 
   #about-us-text p {
-    color: var(--copy-color);
+    color: var(--copy-color-on-dark);
     font-family: var(--std-font), sans-serif;
     font-size: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   /* contact sections *************************************************** */
@@ -98,7 +108,7 @@
   
    #contact-div > h2, 
    #opening-hours-div > h2 {
-    color: var(--copy-color);
+    color: var(--copy-color-on-dark);
     font-size: 100%;
     font-weight: bold;
     font-family: var(--std-font), sans-serif;
@@ -110,7 +120,7 @@
 
   #contact-div > p, 
   #opening-hours-div > p {
-    color: var(--copy-color);
+    color: var(--copy-color-on-dark);
     font-family: var(--std-font), sans-serif;
     font-size: 100%;
     padding: 0;
@@ -123,9 +133,9 @@
   background-size: cover;
   background-position: 75%;
   flex-grow: 1;
-  padding: 20px 10% 20px 10%;
+  padding: 10px 10% 10px 10%;
   position: relative;
-  margin: 20px;
+  margin: 10px;
   width: 100%;
 }
 

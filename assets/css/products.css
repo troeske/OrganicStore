@@ -118,10 +118,6 @@
   color: var(--copy-color-on-dark);
 }
 
-.anchor-text-white {
-  color: var(--copy-color-on-dark);
-  text-decoration-color: var(--copy-color-on-dark);
-}
 
 #groceries-location,
 #coffee-bar-location,
