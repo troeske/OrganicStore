@@ -102,6 +102,12 @@ h3 {
   text-decoration-color: var(--copy-color-on-dark);
 }
 
+.hand-drawn-divider {
+  border-bottom: 2px dashed color: var(--copy-color-on-dark);
+  width: 70%;
+  margin: 20px auto; 
+}
+
 /* Header / Menu Bar ***************************************   */
 header {
   position: fixed;

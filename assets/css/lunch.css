@@ -13,7 +13,7 @@ main {
   } 
   
   #lunch-header {
-      margin: 75px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
+      margin: 48px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
       padding: 10px;
       position: relative;
       text-align: center;
@@ -26,10 +26,11 @@ main {
       color: var(--copy-color-on-dark);
     }
   
+    /* not used right now but I may add text to it */
     #lunch-header > p {
       color: var(--copy-color-on-dark);
       font-size: 100%;
-      margin-top: 10px;
+      margin-top: 1px;
     }
   
     #lunch-grid {
@@ -44,9 +45,9 @@ main {
       grid-template-columns: 1fr;
       justify-content: center;
       position: relative;
-      gap: 10px;
+      gap: 5px;
       padding: 10px;
-      margin: 1% 0;
+      margin: 5% 5%;
     }
     
     .right-aligned {
@@ -57,22 +58,26 @@ main {
         text-align: left;
     }
 
-    #soup-salad, 
-    #mains h2 {
-      color: var(--copy-color-on-dark);
+    #soup-salad > h2, 
+    #mains > h2 {
+      color: var(--empf-color);
       font-size: 100%;
-      font-weight: bold;
       font-family: var(--std-font), sans-serif;
-      text-transform: uppercase;
-      padding: 0;
+      font-weight: bold;
       margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      text-decoration: underline;
+      
+
     }
   
-    #soup-salad, 
+    #soup-salad p, 
     #mains p {
       color: var(--copy-color-on-dark);
       font-family: var(--std-font), sans-serif;
       font-size: 100%;
+      font-weight: normal;
       padding: 0;
       margin: 0;
     }
