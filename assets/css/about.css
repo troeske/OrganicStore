@@ -7,13 +7,21 @@
 } 
 
 #about-us-header {
-    font-size: 175%;
-    font-weight: bold;
-    margin-top: 75px; /* to accomodate for the menu bar  and some space */
+    margin: 75px 20px 20px 20px; /* to accomodate for the menu bar  and some space */
     padding: 10;
     position: relative;
     text-align: center;
+  }
+  
+  #about-us-header > h1 {
+    font-size: 175%;
+    font-weight: bold;
     text-transform: uppercase;
+  }
+
+  #about-us-header > p {
+    font-size: 100%;
+    margin-top: 10px;
   }
 
   .hand-drawn-divider {
@@ -205,6 +213,16 @@
   #about-us-header {
     margin-top: 100px; /* to accomodate for the menu bar  and some space */
   }
+
+  /* contact section **************************************************** */
+
+/*   #contact-section {
+    margin: 0;
+  }
+
+  #contact-grid {
+    margin: 0; 
+  } */
  
 }
 

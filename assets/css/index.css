@@ -398,7 +398,7 @@
 
   /* Vision Section *************************************** */
   #vision {
-    height: 35vh;
+    height: 40vh;
   }
 
   #vision-text {
@@ -510,12 +510,12 @@
 
   /* Vision Section *************************************** */
   #vision {
-    height: 40vh;
+    height: 45vh;
   }
 
   #vision-text {
-    font-size: 500%;
-    width: 900px;
+    font-size: 450%;
+    width: 1200px;
   }
 
   /* special offers carousel ****************************** */
