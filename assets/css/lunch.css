@@ -13,7 +13,7 @@ main {
   } 
   
   #lunch-header {
-      margin: 48px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
+      margin: 60px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
       padding: 10px;
       position: relative;
       text-align: center;
@@ -24,13 +24,6 @@ main {
       font-weight: bold;
       text-transform: uppercase;
       color: var(--copy-color-on-dark);
-    }
-  
-    /* not used right now but I may add text to it */
-    #lunch-header > p {
-      color: var(--copy-color-on-dark);
-      font-size: 100%;
-      margin-top: 1px;
     }
   
     #lunch-grid {
@@ -126,11 +119,11 @@ main {
       top: 85%;
     }
   
-    #about-us-header {
-      margin-top: 100px; /* to accomodate for the menu bar  and some space */
+    #lunch-header {
+      margin-top: 50px; /* to accomodate for the menu bar  and some space */
     }
   
-    /* about-us-text / video  ************************************************** */
+    /* lunch grid  ************************************************** */
     #lunch-grid {
       display: grid;
       grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -138,8 +131,13 @@ main {
       align-items: center; 
       justify-content: center; 
     }
+    
+    #soup-salad, 
+    #mains {
+      font-size: 120%;
+    }
   }
-  
+
   /* Mobilephones in landscape mode 667px and up */
   @media screen and (min-width: 667px) 
     and (orientation: landscape) {
