@@ -1,0 +1,167 @@
+
+/* main - let'S make it very dark */
+main {
+    background-color:  var(--bkrg-color-very-dark);
+    color: var(--copy-color-on-dark);
+  }
+  
+  /* lunch menu section *************************************************** */
+  #lunch {
+      width: 100%;
+      margin: 20px;
+      position: relative;
+  } 
+  
+  #lunch-header {
+      margin: 75px 10% 20px 10%; /* to accomodate for the menu bar  and some space */
+      padding: 10px;
+      position: relative;
+      text-align: center;
+    }
+    
+    #lunch-header > h1 {
+      font-size: 175%;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--copy-color-on-dark);
+    }
+  
+    #lunch-header > p {
+      color: var(--copy-color-on-dark);
+      font-size: 100%;
+      margin-top: 10px;
+    }
+  
+    #lunch-grid {
+      width: 80%;
+      height: 50%;
+      margin: 0 auto; /* Align horizontally in the center of the viewport */
+    }
+    
+    #soup-salad, 
+    #mains {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      position: relative;
+      gap: 10px;
+      padding: 10px;
+      margin: 1% 0;
+    }
+    
+    .right-aligned {
+        text-align: right;
+    }
+
+    .left-aligned {
+        text-align: left;
+    }
+
+    #soup-salad, 
+    #mains h2 {
+      color: var(--copy-color-on-dark);
+      font-size: 100%;
+      font-weight: bold;
+      font-family: var(--std-font), sans-serif;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+    }
+  
+    #soup-salad, 
+    #mains p {
+      color: var(--copy-color-on-dark);
+      font-family: var(--std-font), sans-serif;
+      font-size: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    
+  /* Media query: typical breakpoints ************************************** */
+  /* *********************************************************************** */
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+   
+  }
+  
+  /* Media query: tablets and larger (768px and up */
+  @media screen and (min-width: 768px) {
+  
+    /* Menue Bar and Header section *********** */
+    nav {
+      display: block;
+      position: relative;
+      box-shadow: none;
+      width: fit-content;
+      padding-right: 1rem;
+    }
+  
+    #menu {
+      display: flex;
+    }
+  
+    #menu>li {
+      padding-left: 1rem
+    }
+  
+    .nav-toggle-label {
+      display: none;
+    }
+  
+    #logo {
+      font-size: 150%;
+      line-height: 75px;
+      margin: 0 0.5rem;
+    }
+  
+    /*  floating nav element class ****************************************** */
+    #floating-nav-container {
+      top: 85%;
+    }
+  
+    #about-us-header {
+      margin-top: 100px; /* to accomodate for the menu bar  and some space */
+    }
+  
+    /* about-us-text / video  ************************************************** */
+    #lunch-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      gap: 10px; 
+      align-items: center; 
+      justify-content: center; 
+    }
+  }
+  
+  /* Mobilephones in landscape mode 667px and up */
+  @media screen and (min-width: 667px) 
+    and (orientation: landscape) {
+    /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
+  
+     #floating-nav-container {
+      top: 65%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+    #floating-nav-container {
+      top: 85%;
+    }
+  
+  }
+   
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+   /* about-us-text / video  ************************************************** */
+  
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1736px and up) */
+  @media only screen and (min-width: 1736px) {
+  
+  }
