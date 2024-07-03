@@ -79,7 +79,7 @@
 
 /* special offers carousel ****************************** example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
 .offers {
-  margin: 9% 0 3% 0;
+  margin: 9% 5% 3% 35px;
 }
 
 #special-offers {
@@ -95,7 +95,7 @@
 .offers h2 {
   font-size: 100%;
   color: var(--copy-color);
-  margin-bottom: 15px;
+  margin: 0 0 15px 25px;
 }
 
 #offer-cards {
@@ -105,13 +105,11 @@
 .list {
   display: flex;
   gap: 8px;
-  padding: 16px 16px 40px 8px;
+  padding: 16px 16px 40px 16px;
   list-style: none;
-  overflow-x: auto;
-  /* Changed from scroll to auto */
+  overflow-x: auto; /* Changed from scroll to auto */
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  /* For Firefox */
+  scrollbar-width: none;  /* For Firefox */
 }
 
 /* For Chrome, Safari, and other WebKit-based browsers */
