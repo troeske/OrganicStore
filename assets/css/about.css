@@ -53,14 +53,17 @@
     font-weight: bold;
     font-family: var(--std-font), sans-serif;
     text-transform: uppercase;
-    padding: 0;
+    padding: 10px;
     margin: 0;
   }
 
-  #about-us-img img {
+  #about-us-img video {
     width: 100%;
-    height: 300px;
+    height: auto;
     object-fit: cover;
+    align-self: center;
+    padding: 0;
+    margin: 0;
   }
 
   #about-us-text p {
