@@ -4,8 +4,7 @@
   top: 0;
   left: 0;
   border-radius: 2%;
-  margin-top: 49px; /* to accomodate for the menu bar */
-  margin-bottom: 10px;
+  margin: 49px 0 10px 0; /* to accomodate the header/menu bar */
   padding: 0;
   height: 30vh;
   width: 100%;
@@ -13,18 +12,18 @@
 }
 
 #vision-text {
+  border-radius: 2%;
+  bottom: 30px;
   color: var(--copy-color-on-dark);
   font-size: 180%;
-  text-transform: uppercase;
   font-family: var(--std-font), sans-serif;
   font-weight: bold;
   position: absolute;
-  bottom: 30px;
-  width: 300px;
   padding: 10px;
-  border-radius: 2%;
   margin-left: 1%;
   text-align: left;
+  text-transform: uppercase;
+  width: 300px;
 }
 
 /* Product Categories **************************************** */
@@ -79,7 +78,8 @@
 
 /* special offers carousel ****************************** example taken from: https://codepen.io/tutsplus/pen/zYyGpYo */
 .offers {
-  margin: 9% 5% 3% 35px;
+  margin: 9% 5% 3% 10px;
+  width: 100%;
 }
 
 #special-offers {
@@ -88,7 +88,7 @@
   background: linear-gradient(0deg, rgba(37, 77, 50, 1) 33%, rgba(255, 255, 255, 1) 89%);
   overflow: visible;
   justify-content: space-around;
-  margin: 0 0 0 20px;
+  margin: 0;
   position: relative;
   padding-bottom: 15px;
 }
@@ -96,7 +96,7 @@
 .offers h2 {
   font-size: 100%;
   color: var(--copy-color);
-  margin: 0 0 15px 40px;
+  margin: 0 0 15px 10px;
 }
 
 #offer-cards {
@@ -106,7 +106,7 @@
 .list {
   display: flex;
   gap: 8px;
-  padding: 16px 16px 40px 16px;
+  padding: 16px 16px 40px 10px;
   list-style: none;
   overflow-x: auto; /* Changed from scroll to auto */
   scroll-snap-type: x mandatory;
@@ -120,7 +120,7 @@
 
 .item {
   flex-shrink: 0;
-  width: 60%;
+  width: 65%;
   height: 300px;
   background-color: #FFF;
   scroll-snap-align: center;

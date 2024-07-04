@@ -28,8 +28,8 @@
 /* Asterisk wild card selector to override default styles - taken from Love Running project*/
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 
   /* defining the color scheme as custom properties for easy adaptations later  */
   --bkgr-color: #ffffffff;
@@ -53,8 +53,6 @@
 body {
   background-color: var(--bkgr-color);
   color: var(--copy-color);
-  display: flex;
-  flex-direction: column;
   font-family: var(--std-font), sans-serif;
   height: 100%;
   left: 0;
@@ -268,7 +266,6 @@ main {
   align-items: center;
   min-height: 100vh;
   margin-top: 0px;
-  min-height: 100vh;
   position: relative;
   padding-bottom: 55px;  /* save some space for footer */
 }
