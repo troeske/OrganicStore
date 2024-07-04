@@ -343,28 +343,24 @@
 
   /* Guiding Principles Section ******************************************** */
   .grid-container-left {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 130px 1fr;
   }
 
   .grid-container-right {
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 1fr 130px;
   }
 
   .vertical-right,
   .vertical-left {
     padding: 5px 0 5px 0;
-    line-height: 20px;
+    font-size: 85%;
+    margin: 0;
+    writing-mode: horizontal-tb; /* Change the writing mode to horizontal */
+    place-content: center;
   }
 
   .grid-item {
     margin-bottom: 0px;
-  }
-
-  #guiding-principles h3 {
-    font-size: 85%;
-    margin: 0;
-    padding: 0;
-    writing-mode: horizontal-tb; /* Change the writing mode to horizontal */
   }
 
   #guiding-principles p {
@@ -486,12 +482,12 @@
   }
 
   .grid-container-left {
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 150px 1fr;
     /* Adjusted for one row for the header and the second for the content */
   }
 
   .grid-container-right {
-    grid-template-columns: 1fr 120px;
+    grid-template-columns: 1fr 150px;
     /* Adjusted for one row with specific column sizes */
   }
 
