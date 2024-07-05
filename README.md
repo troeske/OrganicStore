@@ -153,6 +153,194 @@ __Android Chrome:__
 | Rendering of lunch page | load lunch page | page shows as deseigned | ok |
 | Rendering of about page | load about page | page shows as deseigned | ok |
 
+__Android FireFox:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+__Desktop Chrome:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+__Desktop FireFox:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+__Desktop Safari:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+__iOS Safari:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+__iOS Chrome:__
+
+| Feature | Action |Expected Behaviour | Result |
+| ------- | ------ | ----------------- | ------ |
+| Home Navbar | click on Logo | load landing page | ok |
+| Drop Down Menu | click on hamburger menu | Hamburger menu opens | ok |
+| Menu-Item: Products | click on Products in hamburger menu | Product page opens | ok |
+| Menu-Item: Lunch | click on Lunch in hamburger menu | Lunch Menu page opens | ok |
+| Menu-Item: About | click on About in hamburger menu | About page opens | ok |
+| Menu-Item: Home | click on Products in hamburger menu | Landing page opens | ok |
+| Floating Nav Bar | click on map icon | New Tab opens with Google Maps Rout Planner and Address of Organic Store preset | ok |
+| Floating Nav Bar | click on opening hours icon | Slide out appears showing the opening hours of the store | ok |
+| Floating Nav Bar | click on contact details icon | Slide out appears showing the address, email and phone number of the store | ok |
+| Secondary Nav on Landing Page | Click on either of the shown products | jump to products sub-site and section of the selected product | ok |
+| Special Offers Carousel | thumb slide through the available Offers | Offers carousel shows the next special offer | ok |
+| Special Offers Carousel | click/tab the '<previous>' '<next>' button below offer cards to go through the available Offers | Offers carousel shows the next special offer | ok |
+| Footer | Click on the social media icons | Jump to the Facebook or Instagram page of the Organic Store | ok |
+| Newsletter Subscription | click on 'Subscribe' button in the Newsletter Subscription Form | Code Institute page opens showing the input data | ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on First Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on Last Name | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no input on eMail | Info appears to fill out the field and submit is blocked| ok |
+| Newsletter Input Validation | Click on 'Subscribe' with no @ in the eMail field  | Info appears to provide an @ in this field and submit is blocked| ok |
+| Hero Video in About Page | scroll to video | video is auto playing | ok |
+| external links on landing page | click on external link | external link opens in separate tab | ok |
+| external links on products page | click on external link | external link opens in separate tab | ok |
+| external links on about page | click on external link | external link opens in separate tab | ok |
+| Rendering of landing page | load landing page | page shows as deseigned | ok |
+| Rendering of products page | load products page | page shows as deseigned | ok |
+| Rendering of lunch page | load lunch page | page shows as deseigned | ok |
+| Rendering of about page | load about page | page shows as deseigned | ok |
+
+
+
 ### Open Issues
 
 __iOS - Chrome and iOS - Safari:__
