@@ -1,6 +1,10 @@
+/* to ensure consitency accross accros the different pages / sub sites and provide easy path to adaptations in the future, I placed the nav elements in this common.css. To many separate css files would decrease the 
+performance but one additional css file per page should not impact loading performance.  */
+
 /* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* need to ensure proper license are available */
 @font-face {
   font-family: 'NouveauYearsObliqueJNL';
   src: url('../fonts/NouveauYearsObliqueJNL.eot');
@@ -12,7 +16,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'NouveauYearsJNL';
   src: url('../fonts/NouveauYearsJNL.eot');
@@ -80,6 +83,7 @@ h3 {
   padding: 0;
 }
 
+/* for SEO sections should have headdings but we may not want to show a heading for design reasons */
 .hidden-heading {
   display: none;
 }
@@ -88,7 +92,6 @@ h3 {
   font-family: NouveauYearsJNL, serif;
   font-size: 130%;
 }
-
 .SuperCap {
   font-family: NouveauYearsObliqueJNL, serif;
   font-size: 150%;
@@ -100,6 +103,7 @@ h3 {
   text-decoration-color: var(--copy-color-on-dark);
 }
 
+/* currently only used in lunch and about pages */
 .hand-drawn-divider {
   border-bottom: 2px dashed; 
   color: var(--copy-color-on-dark);
@@ -173,7 +177,7 @@ nav {
   font-size: 2rem;
 }
 
-/*  floating nav element class *****************************  */
+/*  floating nav element *****************************  */
 #floating-nav-container {
   position: fixed;
   width: 40px;
@@ -184,7 +188,7 @@ nav {
   z-index: 99;
   background-color: var(--bkgr-color);
   opacity: 0.8;
-  border-radius: 10%;
+  border-radius: 5%;
   padding-left: 2.5px;
   padding-bottom: 1px;
 }
@@ -208,7 +212,7 @@ nav {
   display: none; /* Hide opening hours #opening-hours-slideout by default */
   color: var(--empf-color);
   position: absolute;
-   right: 40px; /* Position to the left of the floating nav */
+  right: 40px; /* Position to the left of the floating nav */
   top: 0px;
   white-space: nowrap;
   background-color: var(--bkgr-color-dark);
@@ -226,7 +230,7 @@ nav {
 }
 
 #contact-slideout {
-  display: none; /* Hide opening hours #opening-hours-slideout by default */
+  display: none; /* Hide contact details-slideout by default */
   color: var(--empf-color);
   position: absolute;
   right: 40px;
@@ -254,7 +258,6 @@ nav {
 .hidden {
   display: none;
 }
-
 
 /* Main ************************************************ */
 main {

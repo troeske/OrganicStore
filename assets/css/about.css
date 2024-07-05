@@ -1,4 +1,3 @@
-
 /* main - let'S make it very dark */
 main {
   background-color:  var(--bkrg-color-very-dark);
@@ -110,7 +109,6 @@ main {
     margin: 10px 0 3px 0;
   }
 
-
   #contact-div > p, 
   #opening-hours-div > p {
     color: var(--copy-color-on-dark);
@@ -179,12 +177,11 @@ main {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
+ /* not used for now */
 }
 
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
-
   /* Menue Bar and Header section *********** */
   nav {
     display: block;
@@ -234,41 +231,35 @@ main {
 /* Mobilephones in landscape mode 667px and up */
 @media screen and (min-width: 667px) 
   and (orientation: landscape) {
-  /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
-
-   #floating-nav-container {
+  #floating-nav-container {
     top: 65%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
   #floating-nav-container {
     top: 85%;
   }
-
 }
  
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
  /* about-us-text / video  ************************************************** */
-
- #about-us-img {
+  #about-us-img {
     align-self: center;
     justify-self: center;
   }
 
-#about-us-img video {
-  width: auto;
-  height: 80%;
-  object-fit: cover;
-  align-self: center;
-}
+  #about-us-img video {
+    width: auto;
+    height: 80%;
+    object-fit: cover;
+    align-self: center;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */
 @media only screen and (min-width: 1736px) {
-
+/* not used for now */
 }

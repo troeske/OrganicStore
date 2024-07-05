@@ -1,5 +1,3 @@
-/* Products Page Styles */
-
 /* Hero Section for vision */
 #products-hero {
   background: url("../images/2020-12-05_2457396479150999805.jpg") no-repeat center center/cover;
@@ -34,7 +32,6 @@
     text-decoration: solid;
     text-transform: uppercase;
   }
-
 
 /* Product Categories as sub-nav Section **************************************** */
 #product-categories {
@@ -118,7 +115,6 @@
   color: var(--copy-color-on-dark);
 }
 
-
 #groceries-location,
 #coffee-bar-location,
 #refills-location,
@@ -181,12 +177,11 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- 
+ /* not used for now */
 }
 
 /* Media query: tablets and larger (768px and up */
 @media screen and (min-width: 768px) {
-
   /* Menue Bar and Header section *********** */
   nav {
     display: block;
@@ -325,7 +320,6 @@
     margin: 15px 10px 7px 0;
     grid-column: 2;
   }
-
 }
 
 /* Mobilephones in landscape mode 667px and up */
@@ -353,7 +347,6 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
   #floating-nav-container {
     top: 85%;
   }
@@ -403,7 +396,6 @@
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
    /* Products Section *************************************** */
    #products-hero {
     height: 33vh;
@@ -434,7 +426,6 @@
 
 /* Extra large devices (large laptops and desktops, 1736px and up) */
 @media only screen and (min-width: 1736px) {
-
    /* Products Section *************************************** */
    #products-hero {
     height: 35vh;
@@ -444,5 +435,4 @@
     font-size: 190%;
     width: 450px;
   }
-
 }

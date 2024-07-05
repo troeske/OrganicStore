@@ -61,8 +61,6 @@ main {
       padding: 0;
       text-transform: uppercase;
       text-decoration: underline;
-      
-
     }
   
     #soup-salad p, 
@@ -140,9 +138,7 @@ main {
 
   /* Mobilephones in landscape mode 667px and up */
   @media screen and (min-width: 667px) 
-    and (orientation: landscape) {
-    /* we only need to adjust the Hero/Vision text and the floating nav bar to be visible in landscape mode on a mobile*** */
-  
+    and (orientation: landscape) {  
      #floating-nav-container {
       top: 65%;
     }
@@ -150,21 +146,18 @@ main {
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-  
     #floating-nav-container {
       top: 85%;
     }
-  
+
   }
-   
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-   /* about-us-text / video  ************************************************** */
-  
+   /* nothing to do here for now */
   }
   
   /* Extra large devices (large laptops and desktops, 1736px and up) */
   @media only screen and (min-width: 1736px) {
-  
+  /* nothing to do here for now */
   }
