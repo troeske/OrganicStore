@@ -110,19 +110,6 @@ To show potential customer the store and its products, there is an embedded vide
 ![Video walk through the store](media/about-page-ipad-mini-vp1.png)
 
 ## Manual Testing
-### Code Validation
-W3 HTML Validator https://validator.w3.org/nu/#textarea
-__Results:__
-All html pages were checked by the w3 html validator and no errors remain.
-
-CSS Validator https://jigsaw.w3.org/css-validator/validator
-__Results:__
-All css files were checked by the w3c css validator and no errors remainn. Remaining warnings are due to the use of css variables.
-
-### Lighthouse Testing 
-![Lighthouse Testing](media/products-sub-nav-landing-page-mobile.png)
-
-### Manual Test-Matrix
 
 __Various Browsers on mobile and desktop devices:__
 
@@ -158,6 +145,18 @@ __Various Browsers on mobile and desktop devices:__
 ### Open Issues
 __iOS - Chrome and iOS - Safari:__
 h2 headings in the Guiding Principles Section on the landing page do not format correctly. 
+
+## Code Validation
+### W3 HTML Validator https://validator.w3.org/nu/#textarea
+__Results:__
+All html pages were checked by the w3 html validator and no errors remain.
+
+### CSS Validator https://jigsaw.w3.org/css-validator/validator
+__Results:__
+All css files were checked by the w3c css validator and no errors remainn. Remaining warnings are due to the use of css variables.
+
+## Lighthouse Testing 
+__Results:__ ![Lighthouse Testing](media/lighthouse-testing-results-landing-page.png)
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
