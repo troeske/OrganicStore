@@ -113,16 +113,18 @@ To show potential customer the store and its products, there is an embedded vide
 ### Code Validation
 W3 HTML Validator https://validator.w3.org/nu/#textarea
 __Results:__
+All html pages were checked by the w3 html validator and no errors remain.
 
 CSS Validator https://jigsaw.w3.org/css-validator/validator
 __Results:__
+All css files were checked by the w3c css validator and no errors remainn. Remaining warnings are due to the use of css variables.
 
 ### Lighthouse Testing 
 ![Lighthouse Testing](media/products-sub-nav-landing-page-mobile.png)
 
 ### Manual Test-Matrix
 
-__Android Chrome:__
+__Various Browsers on mobile and desktop devices:__
 
 | Feature | Action | Expected Behaviour | android-chrome | android-firefox | android-edge | desktop-chrome | desktop-firefox | desktop-safari | desktop-edge | iOS safari | iOS android |
 | ------- | ------ | ----------------- | ------ | ------- | ------ | ----------------- | ------ | ------- | ------ | ----------------- | ------ |
@@ -153,12 +155,7 @@ __Android Chrome:__
 | Rendering of lunch page | load lunch page | page shows as deseigned | ok |ok | ok | ok | ok | ok | ok | ok | ok |
 | Rendering of about page | load about page | page shows as deseigned | ok |ok | ok | ok | ok | ok | ok | ok | ok |
 
-
-
-
-
 ### Open Issues
-
 __iOS - Chrome and iOS - Safari:__
 h2 headings in the Guiding Principles Section on the landing page do not format correctly. 
 
