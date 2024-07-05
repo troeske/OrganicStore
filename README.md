@@ -156,7 +156,20 @@ __Results:__
 All css files were checked by the w3c css validator and no errors remainn. Remaining warnings are due to the use of css variables.
 
 ## Lighthouse Testing 
-__Results:__ ![Lighthouse Testing](media/lighthouse-testing-results-landing-page.png)
+__Results:__ 
+
+Landing Page:
+![Lighthouse Testing index.html](media/lighthouse-testing-results-landing-page.png)
+
+Products Page:
+![Lighthouse Testing products.html](media/Lighthouse-results-products-page.png)
+
+Lunch Page:
+![Lighthouse Testing lunch.html](media/Lighthouse-results-lunch-page.png)
+
+About Page:
+![Lighthouse Testing about.html](media/lighthouse-results-about-page.png)
+
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
