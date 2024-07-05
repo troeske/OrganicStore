@@ -163,7 +163,7 @@ main {
 
 .subscribe-button {
   border-radius: 2px;
-  background-color: var(--empf-color);
+  background-color:  var(--copy-color);
   color: #fafafa;
   font-size: 100%;
   margin-top: 20px;
