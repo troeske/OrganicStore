@@ -170,6 +170,7 @@ Lunch Page:
 About Page:
 ![Lighthouse Testing about.html](media/lighthouse-results-about-page.png)
 
+Summary: picture sizes need to be reduced in next release of the web sitze to improve performance score.
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
