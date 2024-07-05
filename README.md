@@ -1,5 +1,5 @@
 # THE ORGANIC STORE in BIRR
-    This is the website for the Organic Store in Birr: [The Organic Store] (https://troeske.github.io/OrganicStore/index.html). The store is focussing on selling the best organic products from groceries to organic soaps and coffee, sourced locally wherever possible. It is located in the town Birr in Offerlay, Ireland.  
+    This is the website for the Organic Store in Birr: ![The Organic Store](https://troeske.github.io/OrganicStore/index.html). The store is focussing on selling the best organic products from groceries to organic soaps and coffee, sourced locally wherever possible. It is located in the town Birr in Offerlay, Ireland.  
     
     As the store does not have a Web Site up to now, it aims to provide customers with an overview of products and services, location, opening hours and guiding principles. 
     
@@ -33,36 +33,45 @@
 
     ### Wireframes
         Mobile First approach:
-            [Landing Page - index.html]()
-            
+            ![Landing Page Viewport 1- index.html](/workspace/OrganicStore/media/wf-landing-page-mobile-vp1.png)
+            ![Landing Page Viewport 2](media/wf-landing-page-mobile-vp2.png)
+            ![Products Page - products.html](media/wf-products-page-mobile-vp1.png)
+            ![Lunch Menue Page - lunch.html](media/wf-lunch-page-mobile.png)
+            ![About Us Page Viewport 1- about.html](media/wf-about-page-mobile-vp1.png)
+            ![About Us Page Viewport 2](media/wf-about-page-mobile-vp2.png)
+        
+        Tablet and Desktop
+            ![Landing Page Viewport 1](media/wf-landing-page-desktop vp1.png)
+            ![Landing Page Viewport 2](media/wf-landing-page-desktop-vp2.png)
+            ![Products Page](media/wf-products-page-desktop.png)
+            ![Lunch Menue Page](media/wf-lunch-page-desktop.png)
+            ![About Us Page Viewport 1](media/wf-about-page-desktop-vp1.png)
+            ![About Us Page Viewport 2](media/wf-about-page-desktop-vp2.png)
 
+    ### Imagery used
+        The site uses  images and photos produced/taken by the store or their suppliers. Only the hero image on the landing page is an AI generated image (https://www.freepik.com/free-ai-image/organic-farm-harvests-fresh-fruit-vegetables-generated-by-ai_42586748.htm) available for free at www.freepik.com.
 
-
-
-
-    ![Site Structure ](image.png)
-    
-    ○ Imagery used
-    ○ Colour Scheme
+    ### Colour Scheme
+        As the site is for an organic store it uses the color green in various shades: #132a13 as a dark background and #63C132 for emphasize. Besides the header main text oolours are white and black. 
+        
     ○ Typography
+        The logo is based on NouveauYearsObliqueJNL. For commercial deploymend licence rights have to be optained. All other text is based on the sans-serif free Google font: Poppins.
 
-
-    Align Expectations
 
 ## Features
-    core functionalities:
-    Provide: Feature Titel, Screenshot, Value to the user
-        Navbar
-        Footer
-        Buttons or Linke
-        Forms
-        Image Galleries
-        Contact Forms
-        Social Media Icons
-        Scroll Animation
-    
-    Navigation and Interaction Points
-        preview of key elements crucial for user interaction
+    Existing features:
+    - __Navigation Bar__
+    The Landing Page and every sub-site shows the same Navigation/Menu Bar on top as a fixed element that allows the user to jump to any of the pages.
+    ![Navigation Bar - Mobile](media/header-mobile.png)
+    - __Floating Navigation Bar with Slide-Out Info__
+    - __Special Offers Carousel__
+    - __Footer__
+    - __Secondary Navigation Bar through Buttons__
+    - __Newsletter Subscription Form__
+    - __Social Media Icons/Link__
+    - __Google Maps Link in Floating Nav Bar__
+    - __Hero Video in About Page__
+    - __Embedded Links to Suppliers/Partners__
 
 ## Manual Testing
     steps taken
